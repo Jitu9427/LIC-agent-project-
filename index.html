@@ -1,0 +1,1948 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Khetendra Kumar - LIC Agent | Bhinmal, Jalore</title>
+<meta name="description" content="Khetendra Kumar, LIC Agent Code 0201718K. Insurance consultation, new policy, claims & financial planning in Bhinmal, Jalore, Rajasthan.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <div class="nav-logo" onclick="location.href='#home'">
+      <div class="logo-icon">🛡️</div>
+      <div>
+        <div class="logo-name">Khetendra Kumar</div>
+        <div class="logo-sub" data-i18n="agent_code">LIC Agent · 0201718K</div>
+      </div>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" data-i18n="nav_home">Home</a></li>
+      <li><a href="#services" data-i18n="nav_services">Services</a></li>
+      <li><a href="#plans" data-i18n="nav_plans">LIC Plans</a></li>
+      <li><a href="#about" data-i18n="nav_about">About</a></li>
+      <li><a href="#contact" class="nav-cta" data-i18n="nav_contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div class="lang-switch">
+        <button class="lang-btn active" onclick="setLanguage('en'); event.stopPropagation();" id="btn-en">EN</button>
+        <button class="lang-btn" onclick="setLanguage('hi'); event.stopPropagation();" id="btn-hi">हिंदी</button>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Menu">&#9776;</button>
+    </div>
+  </div>
+</nav>
+
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <div class="hero-badge" data-i18n="hero_badge">✅ Trusted LIC Agent Since Years</div>
+    <h1 data-i18n="hero_title">आपका <span class="gold">भरोसेमंद</span><br>LIC बीमा सलाहकार</h1>
+    <p class="hero-sub" data-i18n="hero_sub">Secure your family's future with expert LIC insurance guidance.<br>Policy consultation, claims support & financial planning — all in one place.</p>
+    <div class="hero-btns">
+      <a href="https://wa.me/919928961856" class="btn-primary" target="_blank" data-i18n="hero_consult">📞 Get Free Consultation</a>
+      <a href="#plans" class="btn-outline" data-i18n="hero_view_plans">View LIC Plans</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-num">500+</div><div class="stat-label" data-i18n="hero_happy_clients">Happy Clients</div></div>
+      <div class="stat"><div class="stat-num">35+</div><div class="stat-label" data-i18n="hero_plans_count">LIC Plans</div></div>
+      <div class="stat"><div class="stat-num">100%</div><div class="stat-label" data-i18n="hero_claim_support">Claim Support</div></div>
+    </div>
+  </div>
+  <div class="hero-img-wrap">
+    <div class="agent-card">
+      <div class="agent-avatar">KK</div>
+      <div class="agent-name">Khetendra Kumar</div>
+      <div class="agent-code" data-i18n="agent_code">Agent Code: 0201718K</div>
+      <div class="agent-loc" data-i18n="agent_loc">📍 Bhinmal, Jalore, Rajasthan</div>
+      <a href="tel:9928961856" class="agent-call" data-i18n="agent_call">📞 9928961856</a>
+      <a href="mailto:khetendrakumar02@gmail.com" class="agent-email" style="display:block; margin-top:12px; color:rgba(255,255,255,0.7); text-decoration:none; font-size:13px; font-weight:500; transition:0.2s;" onmouseover="this.style.color='#f5a623'" onmouseout="this.style.color='rgba(255,255,255,0.7)'">✉️ khetendrakumar02@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-badge" data-i18n="services_badge">Our Services</div>
+      <h2 data-i18n="services_title">What We Offer</h2>
+      <p data-i18n="services_sub">Comprehensive LIC services for every stage of your life</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card" onclick="showServiceDetails('s1')"><div class="s-icon">📋</div><h3 data-i18n="s1_title">LIC Policy Consultation</h3><p data-i18n="s1_desc">Get expert advice on the best LIC plan for your needs and budget.</p></div>
+      <div class="service-card" onclick="showServiceDetails('s2')"><div class="s-icon">🆕</div><h3 data-i18n="s2_title">New Policy Issuance</h3><p data-i18n="s2_desc">Hassle-free new policy enrollment with complete documentation support.</p></div>
+      <div class="service-card" onclick="showServiceDetails('s3')"><div class="s-icon">🔔</div><h3 data-i18n="s3_title">Premium Reminder</h3><p data-i18n="s3_desc">Never miss a premium payment with our timely reminder service.</p></div>
+      <div class="service-card" onclick="showServiceDetails('s4')"><div class="s-icon">🔄</div><h3 data-i18n="s4_title">Policy Revival</h3><p data-i18n="s4_desc">Revive your lapsed LIC policy quickly and easily.</p></div>
+      <div class="service-card" onclick="showServiceDetails('s5')"><div class="s-icon">👤</div><h3 data-i18n="s5_title">Nominee Change</h3><p data-i18n="s5_desc">Update your nominee details smoothly and securely.</p></div>
+      <div class="service-card" onclick="showServiceDetails('s6')"><div class="s-icon">🏦</div><h3 data-i18n="s6_title">Loan Against Policy</h3><p data-i18n="s6_desc">Get guidance on availing loans against your LIC policy.</p></div>
+      <div class="service-card" onclick="showServiceDetails('s7')"><div class="s-icon">💰</div><h3 data-i18n="s7_title">Maturity Claim</h3><p data-i18n="s7_desc">Receive your maturity benefits quickly with our assistance.</p></div>
+      <div class="service-card" onclick="showServiceDetails('s8')"><div class="s-icon">🙏</div><h3 data-i18n="s8_title">Death Claim</h3><p data-i18n="s8_desc">Compassionate and swift support for death claim settlement.</p></div>
+      <div class="service-card" onclick="showServiceDetails('s9')"><div class="s-icon">📈</div><h3 data-i18n="s9_title">Financial Planning</h3><p data-i18n="s9_desc">Retirement, pension, child education & wealth planning.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="plans" id="plans">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-badge" data-i18n="plans_badge">LIC Plans</div>
+      <h2 data-i18n="plans_title">Life Insurance Plans</h2>
+      <p data-i18n="plans_sub">Choose the right plan from LIC's trusted portfolio</p>
+    </div>
+    <div class="plans-tabs">
+      <button class="tab-btn active" onclick="showTab('endowment')" data-i18n="tab_endowment">Endowment</button>
+      <button class="tab-btn" onclick="showTab('term')" data-i18n="tab_term">Term</button>
+      <button class="tab-btn" onclick="showTab('moneyback')" data-i18n="tab_moneyback">Money Back</button>
+      <button class="tab-btn" onclick="showTab('whole')" data-i18n="tab_whole">Whole Life</button>
+      <button class="tab-btn" onclick="showTab('child')" data-i18n="tab_child">Child</button>
+      <button class="tab-btn" onclick="showTab('annuity')" data-i18n="tab_annuity">Annuity / Pension</button>
+      <button class="tab-btn" onclick="showTab('ulip')" data-i18n="tab_ulip">ULIP</button>
+      <button class="tab-btn" onclick="showTab('micro')" data-i18n="tab_micro">Micro Insurance</button>
+    </div>
+    
+    <div class="tab-content active" id="endowment">
+      <div class="plan-intro">
+        <div class="plan-icon">🏆</div>
+        <h3 data-i18n="intro_endowment_title">Endowment Plans</h3>
+        <p class="plan-best" data-i18n="intro_endowment_desc">Best for: Safe saving + long-term protection</p>
+      </div>
+      <div class="plan-list">
+        <div class="plan-item" onclick="showPlanDetails('714')"><span class="plan-no">714</span><span data-plan-name="714">New Endowment Plan</span></div>
+        <div class="plan-item" onclick="showPlanDetails('715')"><span class="plan-no">715</span><span data-plan-name="715">Jeevan Anand</span></div>
+        <div class="plan-item" onclick="showPlanDetails('717')"><span class="plan-no">717</span><span data-plan-name="717">Single Premium Endowment</span></div>
+        <div class="plan-item" onclick="showPlanDetails('733')"><span class="plan-no">733</span><span data-plan-name="733">Jeevan Lakshya</span></div>
+        <div class="plan-item" onclick="showPlanDetails('736')"><span class="plan-no">736</span><span data-plan-name="736">Jeevan Labh</span></div>
+        <div class="plan-item" onclick="showPlanDetails('760')"><span class="plan-no">760</span><span data-plan-name="760">Bima Jyoti</span></div>
+        <div class="plan-item" onclick="showPlanDetails('912')"><span class="plan-no">912</span><span data-plan-name="912">Nav Jeevan Shree</span></div>
+        <div class="plan-item" onclick="showPlanDetails('888')"><span class="plan-no">888</span><span data-plan-name="888">New Jeevan Sathi (Single)</span></div>
+        <div class="plan-item" onclick="showPlanDetails('889')"><span class="plan-no">889</span><span data-plan-name="889">New Jeevan Sathi (Limited)</span></div>
+      </div>
+    </div>
+    
+    <div class="tab-content" id="term">
+      <div class="plan-intro">
+        <div class="plan-icon">🛡️</div>
+        <h3 data-i18n="intro_term_title">Term Insurance Plans</h3>
+        <p class="plan-best" data-i18n="intro_term_desc">Best for: Low premium + high risk cover</p>
+      </div>
+      <div class="plan-list">
+        <div class="plan-item" onclick="showPlanDetails('955')"><span class="plan-no">955</span><span data-plan-name="955">New Jeevan Amar</span></div>
+        <div class="plan-item" onclick="showPlanDetails('875')"><span class="plan-no">875</span><span data-plan-name="875">YUVA TERM</span></div>
+        <div class="plan-item" onclick="showPlanDetails('877')"><span class="plan-no">877</span><span data-plan-name="877">Yuva Credit Life</span></div>
+        <div class="plan-item" onclick="showPlanDetails('887')"><span class="plan-no">887</span><span data-plan-name="887">Bima Kavach</span></div>
+        <div class="plan-item" onclick="showPlanDetails('859')"><span class="plan-no">859</span><span data-plan-name="859">Saral Jeevan Bima</span></div>
+      </div>
+    </div>
+    
+    <div class="tab-content" id="moneyback">
+      <div class="plan-intro">
+        <div class="plan-icon">💵</div>
+        <h3 data-i18n="intro_moneyback_title">Money Back Plans</h3>
+        <p class="plan-best" data-i18n="intro_moneyback_desc">Best for: Regular cash flow + insurance</p>
+      </div>
+      <div class="plan-list">
+        <div class="plan-item" onclick="showPlanDetails('720')"><span class="plan-no">720</span><span data-plan-name="720">Money Back (20 Year)</span></div>
+        <div class="plan-item" onclick="showPlanDetails('721')"><span class="plan-no">721</span><span data-plan-name="721">Money Back (25 Year)</span></div>
+        <div class="plan-item" onclick="showPlanDetails('748')"><span class="plan-no">748</span><span data-plan-name="748">Bima Shree</span></div>
+        <div class="plan-item" onclick="showPlanDetails('881')"><span class="plan-no">881</span><span data-plan-name="881">Bima Lakshmi</span></div>
+      </div>
+    </div>
+    
+    <div class="tab-content" id="whole">
+      <div class="plan-intro">
+        <div class="plan-icon">♾️</div>
+        <h3 data-i18n="intro_whole_title">Whole Life Plans</h3>
+        <p class="plan-best" data-i18n="intro_whole_desc">Best for: Lifetime protection + pension type income</p>
+      </div>
+      <div class="plan-list">
+        <div class="plan-item" onclick="showPlanDetails('745')"><span class="plan-no">745</span><span data-plan-name="745">Jeevan Umang</span></div>
+        <div class="plan-item" onclick="showPlanDetails('771')"><span class="plan-no">771</span><span data-plan-name="771">Jeevan Utsav</span></div>
+        <div class="plan-item" onclick="showPlanDetails('883')"><span class="plan-no">883</span><span data-plan-name="883">Jeevan Utsav (Single)</span></div>
+      </div>
+    </div>
+    
+    <div class="tab-content" id="child">
+      <div class="plan-intro">
+        <div class="plan-icon">👶</div>
+        <h3 data-i18n="intro_child_title">Child Plans</h3>
+        <p class="plan-best" data-i18n="intro_child_desc">Best for: Child education & future planning</p>
+      </div>
+      <div class="plan-list">
+        <div class="plan-item" onclick="showPlanDetails('732')"><span class="plan-no">732</span><span data-plan-name="732">New Children's Money Back</span></div>
+        <div class="plan-item" onclick="showPlanDetails('734')"><span class="plan-no">734</span><span data-plan-name="734">Jeevan Tarun</span></div>
+        <div class="plan-item" onclick="showPlanDetails('774')"><span class="plan-no">774</span><span data-plan-name="774">Amrit Baal</span></div>
+      </div>
+    </div>
+    
+    <div class="tab-content" id="annuity">
+      <div class="plan-intro">
+        <div class="plan-icon">👴</div>
+        <h3 data-i18n="intro_annuity_title">Annuity & Pension Plans</h3>
+        <p class="plan-best" data-i18n="intro_annuity_desc">Best for: Guaranteed lifetime retirement income</p>
+      </div>
+      <div class="plan-list">
+        <div class="plan-item" onclick="showPlanDetails('857')"><span class="plan-no">857</span><span data-plan-name="857">Jeevan Akshay-VII</span></div>
+        <div class="plan-item" onclick="showPlanDetails('758')"><span class="plan-no">758</span><span data-plan-name="758">New Jeevan Shanti</span></div>
+        <div class="plan-item" onclick="showPlanDetails('879')"><span class="plan-no">879</span><span data-plan-name="879">Smart Pension</span></div>
+        <div class="plan-item" onclick="showPlanDetails('862')"><span class="plan-no">862</span><span data-plan-name="862">Saral Pension</span></div>
+      </div>
+    </div>
+    
+    <div class="tab-content" id="ulip">
+      <div class="plan-intro">
+        <div class="plan-icon">📊</div>
+        <h3 data-i18n="intro_ulip_title">ULIP (Market Linked) Plans</h3>
+        <p class="plan-best" data-i18n="intro_ulip_desc">Best for: High returns + insurance protection</p>
+      </div>
+      <div class="plan-list">
+        <div class="plan-item" onclick="showPlanDetails('749')"><span class="plan-no">749</span><span data-plan-name="749">Nivesh Plus</span></div>
+        <div class="plan-item" onclick="showPlanDetails('873')"><span class="plan-no">873</span><span data-plan-name="873">Index Plus</span></div>
+        <div class="plan-item" onclick="showPlanDetails('752')"><span class="plan-no">752</span><span data-plan-name="752">SIIP</span></div>
+        <div class="plan-item" onclick="showPlanDetails('867')"><span class="plan-no">867</span><span data-plan-name="867">New Pension Plus</span></div>
+        <div class="plan-item" onclick="showPlanDetails('886')"><span class="plan-no">886</span><span data-plan-name="886">Protection Plus</span></div>
+      </div>
+    </div>
+    
+    <div class="tab-content" id="micro">
+      <div class="plan-intro">
+        <div class="plan-icon">🪙</div>
+        <h3 data-i18n="intro_micro_title">Micro Insurance Plans</h3>
+        <p class="plan-best" data-i18n="intro_micro_desc">Best for: Low premium protection for low income groups</p>
+      </div>
+      <div class="plan-list">
+        <div class="plan-item" onclick="showPlanDetails('751')"><span class="plan-no">751</span><span data-plan-name="751">Micro Bachat</span></div>
+        <div class="plan-item" onclick="showPlanDetails('880')"><span class="plan-no">880</span><span data-plan-name="880">Jan Suraksha</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="about">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-badge" data-i18n="why_badge">Why Choose Us</div>
+      <h2 data-i18n="why_title">आप हम पर क्यों भरोसा करें?</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-icon">🤝</div>
+        <h3 data-i18n="why_1_title">Personal Service</h3>
+        <p data-i18n="why_1_desc">Direct agent support — no middlemen, no delays.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">⚡</div>
+        <h3 data-i18n="why_2_title">Fast Processing</h3>
+        <p data-i18n="why_2_desc">Quick policy issuance and claim settlement.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">🎯</div>
+        <h3 data-i18n="why_3_title">Right Plan for You</h3>
+        <p data-i18n="why_3_desc">Customized plan recommendations based on your goals.</p>
+      </div>
+      <div class="why-card">
+        <div class="why-icon">📞</div>
+        <h3 data-i18n="why_4_title">Always Available</h3>
+        <p data-i18n="why_4_desc">Call or WhatsApp anytime — we are always here for you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-badge" data-i18n="contact_badge">Contact Us</div>
+      <h2 data-i18n="contact_title">Get In Touch</h2>
+      <p data-i18n="contact_sub">Reach out for free consultation — we reply quickly!</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="info-card">
+          <div class="info-icon">👤</div>
+          <div><strong data-i18n="contact_name">Khetendra Kumar</strong><br><span data-i18n="agent_code">LIC Agent Code: 0201718K</span></div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">📍</div>
+          <div data-i18n="contact_loc">Bhinmal, Jalore<br>Rajasthan – 343029</div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">📞</div>
+          <div><a href="tel:9928961856">9928961856</a></div>
+        </div>
+        <div class="info-card">
+          <div class="info-icon">✉️</div>
+          <div><strong>Email</strong><br><a href="mailto:khetendrakumar02@gmail.com">khetendrakumar02@gmail.com</a></div>
+        </div>
+        <div class="cta-btns">
+          <a href="https://wa.me/919928961856" class="btn-whatsapp" target="_blank" data-i18n="contact_wa">💬 WhatsApp Now</a>
+          <a href="tel:9928961856" class="btn-call" data-i18n="contact_call_now">📞 Call Now</a>
+        </div>
+      </div>
+      <form class="contact-form" onsubmit="submitForm(event)">
+        <h3 data-i18n="form_title">Send a Message</h3>
+        <input type="text" placeholder="Your Name" required id="fname" data-i18n-placeholder="form_name_placeholder">
+        <input type="tel" placeholder="Your Mobile Number" required id="fphone" data-i18n-placeholder="form_phone_placeholder">
+        <select id="fservice">
+          <option value="" data-i18n="form_select_service">Select Service</option>
+          <option value="LIC Policy Consultation" data-i18n="s1_title">LIC Policy Consultation</option>
+          <option value="New Policy Issuance" data-i18n="s2_title">New Policy Issuance</option>
+          <option value="Policy Revival" data-i18n="s4_title">Policy Revival</option>
+          <option value="Claim Assistance" data-i18n="s7_title">Maturity Claim</option>
+          <option value="Financial Planning" data-i18n="s9_title">Financial Planning</option>
+        </select>
+        <textarea placeholder="Your Message" rows="4" id="fmsg" data-i18n-placeholder="form_msg_placeholder"></textarea>
+        <button type="submit" class="btn-primary" data-i18n="form_submit">Send Message 🚀</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div>
+        <div class="footer-logo">🛡️ Khetendra Kumar</div>
+        <p data-i18n="footer_desc">Your trusted LIC agent in Bhinmal, Jalore, Rajasthan.</p>
+      </div>
+      <div>
+        <strong data-i18n="footer_links">Quick Links</strong>
+        <ul>
+          <li><a href="#services" data-i18n="nav_services">Services</a></li>
+          <li><a href="#plans" data-i18n="nav_plans">LIC Plans</a></li>
+          <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <strong data-i18n="footer_contact_title">Contact</strong>
+        <p>📞 9928961856<br>✉️ khetendrakumar02@gmail.com<br><span data-i18n="contact_loc">📍 Bhinmal, Jalore, Rajasthan 343029</span></p>
+      </div>
+    </div>
+    <div class="footer-bottom" data-i18n="footer_rights">© 2025 Khetendra Kumar – LIC Agent 0201718K. All rights reserved.</div>
+  </div>
+</footer>
+
+<a href="https://wa.me/919928961856" class="fab" target="_blank" title="WhatsApp">💬</a>
+
+<!-- PLAN & SERVICE DETAILS MODAL OVERLAY -->
+<div class="modal-overlay" id="planModal">
+  <div class="modal-card">
+    <button class="modal-close" onclick="closeModal()">&times;</button>
+    <div class="modal-header">
+      <span class="modal-badge" id="modalBadge">715</span>
+      <h3 id="modalTitle">Jeevan Anand</h3>
+    </div>
+    <div class="modal-body">
+      <div class="modal-section" id="modalEligibilitySection">
+        <h4 data-i18n="modal_eligibility">Age Eligibility</h4>
+        <p id="modalEligibility">18-50 years</p>
+      </div>
+      <div class="modal-section">
+        <h4 id="modalWhatTitle" data-i18n="modal_what">What is this plan?</h4>
+        <p id="modalWhat">Plan details will load here...</p>
+      </div>
+      <div class="modal-section">
+        <h4 id="modalWhyTitle" data-i18n="modal_why">Why should you choose it?</h4>
+        <p id="modalWhy">Rationale will load here...</p>
+      </div>
+      <div class="modal-section">
+        <h4 id="modalBenefitsTitle" data-i18n="modal_benefits">Key Benefits</h4>
+        <ul id="modalBenefits">
+          <!-- Populated dynamically -->
+        </ul>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#" id="modalWaBtn" class="btn-whatsapp" target="_blank" data-i18n="modal_wa_btn">💬 Inquire on WhatsApp</a>
+      <a href="tel:9928961856" id="modalCallBtn" class="btn-call" data-i18n="modal_call_btn">📞 Call Agent</a>
+    </div>
+  </div>
+</div>
+
+<script>
+// Translations dictionary
+const translations = {
+  en: {
+    nav_home: "Home",
+    nav_services: "Services",
+    nav_plans: "LIC Plans",
+    nav_about: "About Us",
+    nav_contact: "Contact",
+    hero_badge: "✅ Trusted LIC Agent Since Years",
+    hero_title: "Your <span class=\"gold\">Trusted</span><br>LIC Insurance Advisor",
+    hero_sub: "Secure your family's future with expert LIC insurance guidance. Policy consultation, claims support & financial planning — all in one place.",
+    hero_consult: "📞 Get Free Consultation",
+    hero_view_plans: "View LIC Plans",
+    hero_happy_clients: "Happy Clients",
+    hero_plans_count: "LIC Plans",
+    hero_claim_support: "Claim Support",
+    agent_code: "LIC Agent · 0201718K",
+    agent_loc: "📍 Bhinmal, Jalore, Rajasthan",
+    agent_call: "📞 9928961856",
+    services_badge: "Our Services",
+    services_title: "What We Offer",
+    services_sub: "Comprehensive LIC services for every stage of your life (Click any card for details)",
+    s1_title: "LIC Policy Consultation",
+    s1_desc: "Get expert advice on the best LIC plan for your needs and budget.",
+    s2_title: "New Policy Issuance",
+    s2_desc: "Hassle-free new policy enrollment with complete documentation support.",
+    s3_title: "Premium Reminder",
+    s3_desc: "Never miss a premium payment with our timely reminder service.",
+    s4_title: "Policy Revival",
+    s4_desc: "Revive your lapsed LIC policy quickly and easily.",
+    s5_title: "Nominee Change",
+    s5_desc: "Update your nominee details smoothly and securely.",
+    s6_title: "Loan Against Policy",
+    s6_desc: "Get guidance on availing loans against your LIC policy.",
+    s7_title: "Maturity Claim",
+    s7_desc: "Receive your maturity benefits quickly with our assistance.",
+    s8_title: "Death Claim",
+    s8_desc: "Compassionate and swift support for death claim settlement.",
+    s9_title: "Financial Planning",
+    s9_desc: "Retirement, pension, child education & wealth planning.",
+    plans_badge: "LIC Plans",
+    plans_title: "Life Insurance Plans",
+    plans_sub: "Choose the right plan from LIC's trusted portfolio (Click any plan for details)",
+    tab_endowment: "Endowment",
+    tab_term: "Term",
+    tab_moneyback: "Money Back",
+    tab_whole: "Whole Life",
+    tab_child: "Child",
+    tab_annuity: "Annuity / Pension",
+    tab_ulip: "ULIP",
+    tab_micro: "Micro Insurance",
+    intro_endowment_title: "Endowment Plans",
+    intro_endowment_desc: "Best for: Safe saving + long-term protection",
+    intro_term_title: "Term Insurance Plans",
+    intro_term_desc: "Best for: Low premium + high risk cover",
+    intro_moneyback_title: "Money Back Plans",
+    intro_moneyback_desc: "Best for: Regular cash flow + insurance",
+    intro_whole_title: "Whole Life Plans",
+    intro_whole_desc: "Best for: Lifetime protection + pension type income",
+    intro_child_title: "Child Plans",
+    intro_child_desc: "Best for: Child education & future planning",
+    intro_annuity_title: "Annuity & Pension Plans",
+    intro_annuity_desc: "Best for: Guaranteed lifetime retirement income",
+    intro_ulip_title: "ULIP (Market Linked) Plans",
+    intro_ulip_desc: "Best for: High returns + insurance protection",
+    intro_micro_title: "Micro Insurance Plans",
+    intro_micro_desc: "Best for: Low premium protection for low income groups",
+    why_badge: "Why Choose Us",
+    why_title: "Why Should You Trust Us?",
+    why_1_title: "Personal Service",
+    why_1_desc: "Direct agent support — no middlemen, no delays.",
+    why_2_title: "Fast Processing",
+    why_2_desc: "Quick policy issuance and claim settlement.",
+    why_3_title: "Right Plan for You",
+    why_3_desc: "Customized plan recommendations based on your goals.",
+    why_4_title: "Always Available",
+    why_4_desc: "Call or WhatsApp anytime — we are always here for you.",
+    contact_badge: "Contact Us",
+    contact_title: "Get In Touch",
+    contact_sub: "Reach out for free consultation — we reply quickly!",
+    contact_name: "Khetendra Kumar",
+    contact_loc: "Bhinmal, Jalore, Rajasthan – 343029",
+    contact_wa: "💬 WhatsApp Now",
+    contact_call_now: "📞 Call Now",
+    form_title: "Send a Message",
+    form_name_placeholder: "Your Name",
+    form_phone_placeholder: "Your Mobile Number",
+    form_select_service: "Select Service",
+    form_msg_placeholder: "Your Message",
+    form_submit: "Send Message 🚀",
+    footer_desc: "Your trusted LIC agent in Bhinmal, Jalore, Rajasthan.",
+    footer_links: "Quick Links",
+    footer_contact_title: "Contact",
+    footer_rights: "© 2025 Khetendra Kumar – LIC Agent 0201718K. All rights reserved.",
+    modal_eligibility: "Age Eligibility",
+    modal_what: "What is this plan?",
+    modal_why: "Why should you choose it?",
+    modal_benefits: "Key Benefits",
+    modal_wa_btn: "💬 Inquire on WhatsApp",
+    modal_call_btn: "📞 Call Agent"
+  },
+  hi: {
+    nav_home: "होम",
+    nav_services: "सेवाएं",
+    nav_plans: "LIC प्लान",
+    nav_about: "हमारे बारे में",
+    nav_contact: "संपर्क करें",
+    hero_badge: "✅ कई वर्षों से आपका भरोसेमंद LIC एजेंट",
+    hero_title: "आपका <span class=\"gold\">भरोसेमंद</span><br>LIC बीमा सलाहकार",
+    hero_sub: "विशेषज्ञ LIC बीमा मार्गदर्शन के साथ अपने परिवार का भविष्य सुरक्षित करें। पॉलिसी सलाह, क्लेम सहायता और फाइनेंशियल प्लानिंग - सब एक ही जगह पर।",
+    hero_consult: "📞 फ्री सलाह लें",
+    hero_view_plans: "LIC प्लान देखें",
+    hero_happy_clients: "खुश ग्राहक",
+    hero_plans_count: "LIC प्लान",
+    hero_claim_support: "क्लम सपोर्ट",
+    agent_code: "LIC एजेंट · 0201718K",
+    agent_loc: "📍 भीनमाल, जालोर, राजस्थान",
+    agent_call: "📞 9928961856",
+    services_badge: "हमारी सेवाएं",
+    services_title: "हम क्या प्रदान करते हैं",
+    services_sub: "आपके जीवन के हर पड़ाव के लिए संपूर्ण LIC सेवाएं (पूरी जानकारी के लिए कार्ड पर क्लिक करें)",
+    s1_title: "LIC पॉलिसी सलाह",
+    s1_desc: "अपनी ज़रूरतों और बजट के अनुसार सबसे बेहतरीन LIC प्लान पर सलाह लें।",
+    s2_title: "नई पॉलिसी शुरू करना",
+    s2_desc: "बिना किसी परेशानी के नई पॉलिसी शुरू करें, पूरी कागजी कार्रवाई में मदद।",
+    s3_title: "प्रीमियम रिमाइंडर",
+    s3_desc: "समय पर प्रीमियम भरने के लिए रिमाइंडर पाएं ताकि पॉलिसी चालू रहे।",
+    s4_title: "बंद पॉलिसी चालू करना",
+    s4_desc: "अपनी बंद (lapsed) LIC पॉलिसी को फिर से आसानी से चालू करें।",
+    s5_title: "नॉमिनी बदलना",
+    s5_desc: "अपनी पॉलिसी में नॉमिनी (नामांकित व्यक्ति) का नाम आसानी से बदलें।",
+    s6_title: "पॉलिसी पर लोन",
+    s6_desc: "अपनी LIC पॉलिसी पर कम ब्याज दर पर तुरंत लोन पाने के लिए सलाह लें।",
+    s7_title: "मैच्योरिटी क्लेम",
+    s7_desc: "पॉलिसी पूरी होने पर मैच्योरिटी का पैसा सीधे खाते में पाने में मदद।",
+    s8_title: "डेथ क्लेम सहायता",
+    s8_desc: "मुश्किल समय में परिवार के लिए क्लेम सेटलमेंट में पूरी सहायता।",
+    s9_title: "फ्यूचर प्लानिंग",
+    s9_desc: "रिटायरमेंट, बुढ़ापा पेंशन और बच्चों की पढ़ाई के लिए सही बचत योजना।",
+    plans_badge: "LIC प्लान",
+    plans_title: "जीवन बीमा योजनाएं",
+    plans_sub: "LIC के भरोसेमंद पोर्टफोलियो से सही प्लान चुनें (पूरी जानकारी के लिए किसी भी प्लान पर क्लिक करें)",
+    tab_endowment: "एंडोमेंट",
+    tab_term: "टर्म (शुद्ध बीमा)",
+    tab_moneyback: "मनी बैक",
+    tab_whole: "होल लाइफ (जीवनभर)",
+    tab_child: "चाइल्ड प्लान",
+    tab_annuity: "पेंशन / एन्युटी",
+    tab_ulip: "यूलिप (मार्केट लिंक)",
+    tab_micro: "माइक्रो (छोटी बचत)",
+    intro_endowment_title: "एंडोमेंट प्लान (बचत और सुरक्षा)",
+    intro_endowment_desc: "बेस्ट है: सुरक्षित बचत + लंबी अवधि के लिए लाइफ कवर",
+    intro_term_title: "टर्म इंश्योरेंस प्लान (सुरक्षा कवच)",
+    intro_term_desc: "बेस्ट है: बहुत कम प्रीमियम + बहुत बड़ा लाइफ कवर",
+    intro_moneyback_title: "मनी बैक प्लान (नियमित वापसी)",
+    intro_moneyback_desc: "बेस्ट है: समय-समय पर पैसा वापस + सुरक्षा",
+    intro_whole_title: "होल लाइफ प्लान (जीवनभर का बीमा)",
+    intro_whole_desc: "बेस्ट है: जीवनभर की सुरक्षा + पेंशन जैसा लाभ",
+    intro_child_title: "चाइल्ड प्लान (बच्चों का भविष्य)",
+    intro_child_desc: "बेस्ट है: बच्चे की उच्च शिक्षा और शादी के लिए बचत",
+    intro_annuity_title: "पेंशन और एन्युटी प्लान",
+    intro_annuity_desc: "बेस्ट है: बुढ़ापे में जीवनभर के लिए गारंटीड नियमित पेंशन",
+    intro_ulip_title: "यूलिप (मार्केट लिंक इन्वेस्टमेंट)",
+    intro_ulip_desc: "बेस्ट है: शेयर बाजार जैसे रिटर्न + लाइफ इंश्योरेंस",
+    intro_micro_title: "माइक्रो इंश्योरेंस (छोटी बचत)",
+    intro_micro_desc: "बेस्ट है: कम आय वाले लोगों के लिए बहुत कम प्रीमियम में बचत व सुरक्षा",
+    why_badge: "हमें क्यों चुनें",
+    why_title: "आप हम पर क्यों भरोसा करें?",
+    why_1_title: "पर्सनल सर्विस (सीधे संपर्क)",
+    why_1_desc: "सीधे एजेंट (मुझसे) बात - कोई बिचौलिया नहीं, तुरंत काम।",
+    why_2_title: "तेज काम",
+    why_2_desc: "जल्द नया बीमा चालू होना और फटाफट क्लेम पास।",
+    why_3_title: "सही प्लान की सलाह",
+    why_3_desc: "आपके बच्चों और परिवार के लक्ष्यों के अनुसार सही पॉलिसी।",
+    why_4_title: "हमेशा तैयार",
+    why_4_desc: "कॉल या व्हाट्सएप कभी भी करें - हम हमेशा आपकी सेवा में तैयार हैं।",
+    contact_badge: "संपर्क करें",
+    contact_title: "हमसे संपर्क करें",
+    contact_sub: "फ्री सलाह के लिए अभी संपर्क करें - हम तुरंत जवाब देते हैं!",
+    contact_name: "खेतेन्द्र कुमार",
+    contact_loc: "भीनमाल, जालोर, राजस्थान – 343029",
+    contact_wa: "💬 व्हाट्सएप करें",
+    contact_call_now: "📞 कॉल करें",
+    form_title: "संदेश भेजें",
+    form_name_placeholder: "आपका नाम",
+    form_phone_placeholder: "आपका मोबाइल नंबर",
+    form_select_service: "सेवा चुनें",
+    form_msg_placeholder: "आपका संदेश",
+    form_submit: "व्हाट्सएप पर भेजें 🚀",
+    footer_desc: "भीनमाल, जालोर, राजस्थान में आपका भरोसेमंद LIC एजेंट।",
+    footer_links: "क्विक लिंक्स",
+    footer_contact_title: "संपर्क सूत्र",
+    footer_rights: "© 2025 खेतेन्द्र कुमार – LIC एजेंट 0201718K. सर्वाधिकार सुरक्षित।",
+    modal_eligibility: "उम्र की सीमा (Eligibility)",
+    modal_what: "यह प्लान क्या है?",
+    modal_why: "आपको यह क्यों लेना चाहिए?",
+    modal_benefits: "मुख्य फायदे (Benefits)",
+    modal_wa_btn: "💬 व्हाट्सएप पर जानकारी लें",
+    modal_call_btn: "📞 एजेंट को कॉल करें"
+  }
+};
+
+// Plan Details Database
+const planDetails = {
+  "714": {
+    name: { en: "New Endowment - 714", hi: "न्यू एंडोमेंट - 714" },
+    eligibility: { en: "8 to 50 Years", hi: "8 से 50 वर्ष" },
+    what: {
+      en: "A savings-cum-protection plan that provides a lump sum amount at maturity or financial support to the family in case of death.",
+      hi: "यह बचत और सुरक्षा का एक बढ़िया प्लान है, जिसमें मैच्योरिटी पर एकमुश्त पैसा मिलता है या मृत्यु के मामले में परिवार को आर्थिक मदद मिलती है।"
+    },
+    why: {
+      en: "Best for individuals looking for guaranteed safe savings along with life coverage for long-term goals like buying a house or retirement.",
+      hi: "यदि आप अपने लंबे समय के सपनों (जैसे घर खरीदना या बुढ़ापा) के लिए सुरक्षित बचत और लाइफ कवर दोनों चाहते हैं, तो यह प्लान आपके लिए बेस्ट है।"
+    },
+    benefits: {
+      en: [
+        "Lump sum amount (Sum Assured + Bonus) at maturity.",
+        "Full life cover protection during the policy term.",
+        "Tax benefits on premium paid and maturity amount.",
+        "Loan facility available after 2 years."
+      ],
+      hi: [
+        "मैच्योरिटी पर एकमुश्त पैसा (बीमा राशि + बोनस)।",
+        "पॉलिसी के दौरान पूरा लाइफ कवर (सुरक्षा)।",
+        "प्रीमियम और मैच्योरिटी के पैसे पर टैक्स में छूट (80C & 10(10D))।",
+        "2 साल बाद पॉलिसी पर आसानी से लोन लेने की सुविधा।"
+      ]
+    }
+  },
+  "715": {
+    name: { en: "Jeevan Anand - 715", hi: "जीवन आनंद - 715" },
+    eligibility: { en: "18 to 50 Years", hi: "18 से 50 वर्ष" },
+    what: {
+      en: "A unique plan providing double benefit: a lump sum payout at maturity, PLUS life cover continues for the rest of your life even after maturity.",
+      hi: "यह LIC का सबसे लोकप्रिय प्लान है जो डबल फायदा देता है - मैच्योरिटी पर पूरा पैसा मिलेगा, और उसके बाद भी पूरी जिंदगी के लिए आपका लाइफ कवर (रिस्क कवर) फ्री में चालू रहेगा।"
+    },
+    why: {
+      en: "Known as 'Zindagi ke saath bhi, zindagi ke baad bhi'. Best if you want a maturity payout but also want to leave a financial legacy for your family.",
+      hi: "इसे 'ज़िंदगी के साथ भी, ज़िंदगी के बाद भी' कहा जाता है। यह उन लोगों के लिए बेस्ट है जो मैच्योरिटी का पैसा भी चाहते हैं और अपने बाद परिवार के लिए बड़ा फंड भी छोड़ना चाहते हैं।"
+    },
+    benefits: {
+      en: [
+        "Double Benefit: Maturity payout + Lifelong free life cover.",
+        "Maturity amount includes Sum Assured, Vesting Bonus, and Final Additional Bonus.",
+        "Tax savings under Section 80C and tax-free maturity.",
+        "High cover with optional riders for accidental death and disability."
+      ],
+      hi: [
+        "डबल फायदा: मैच्योरिटी का पैसा + जीवनभर का फ्री लाइफ कवर।",
+        "मैच्योरिटी पर सम एश्योर्ड के साथ-साथ जमा बोनस और एक्स्ट्रा बोनस भी मिलता है।",
+        "टैक्स की बचत और मैच्योरिटी पर मिलने वाला पूरा पैसा टैक्स-फ्री।",
+        "एक्सीडेंटल डेथ और अपंगता के लिए अतिरिक्त राइडर की सुविधा।"
+      ]
+    }
+  },
+  "717": {
+    name: { en: "Single Premium Endowment - 717", hi: "सिंगल प्रीमियम एंडोमेंट - 717" },
+    eligibility: { en: "0 to 65 Years", hi: "0 से 65 वर्ष" },
+    what: {
+      en: "A one-time premium payment plan that provides savings and security for the entire selected policy term.",
+      hi: "एक बार प्रीमियम भरें और पूरे पॉलिसी टर्म के लिए लाइफ कवर और बचत का फायदा पाएं। बार-बार प्रीमियम भरने का झंझट नहीं।"
+    },
+    why: {
+      en: "Best if you have a lump sum amount (like bonus, inheritance, property sale) and want to invest it safely with life insurance.",
+      hi: "यदि आपके पास एकमुश्त पैसा (जैसे बोनस या जमीन की बिक्री का पैसा) है और आप उसे सुरक्षित रूप से लाइफ इंश्योरेंस के साथ निवेश करना चाहते हैं।"
+    },
+    benefits: {
+      en: [
+        "One-time investment, no future premium payment worries.",
+        "Guaranteed returns with accumulated bonuses.",
+        "Immediate liquidity via loan facility.",
+        "Tax benefits on investment and returns."
+      ],
+      hi: [
+        "एक बार का निवेश, भविष्य में प्रीमियम भुगतान की कोई चिंता नहीं।",
+        "जमा होने वाले बोनस के साथ गारंटीड रिटर्न।",
+        "पॉलिसी पर तुरंत लोन लेकर पैसों की जरूरत पूरी करने की सुविधा।",
+        "निवेश और मिलने वाले रिटर्न पर टैक्स में छूट।"
+      ]
+    }
+  },
+  "733": {
+    name: { en: "Jeevan Lakshya - 733", hi: "जीवन लक्ष्य - 733" },
+    eligibility: { en: "18 to 50 Years", hi: "18 से 50 वर्ष" },
+    what: {
+      en: "A child welfare plan. In case of parent's demise, all future premiums are waived, 10% of Sum Assured is paid annually to the family, and full maturity is paid at the end.",
+      hi: "बच्चों के भविष्य के लिए खास योजना। यदि पिता/माता को कुछ हो जाए, तो आगे के सारे प्रीमियम माफ हो जाते हैं, परिवार को हर साल 10% पैसा मिलता है और अंत में मैच्योरिटी भी मिलती है।"
+    },
+    why: {
+      en: "Excellent for securing child's higher education and marriage. Ensures their dreams are fulfilled even in the parent's absence.",
+      hi: "बच्चों की उच्च शिक्षा और शादी को सुरक्षित करने के लिए सबसे बढ़िया प्लान। आपकी अनुपस्थिति में भी बच्चे के सारे सपने पूरे होंगे।"
+    },
+    benefits: {
+      en: [
+        "In-built premium waiver benefit upon parent's demise.",
+        "Annual income support (10% of Sum Assured) to the family.",
+        "Full maturity amount (110% of Sum Assured + Bonus) paid at term end.",
+        "High tax savings under 80C."
+      ],
+      hi: [
+        "माता-पिता की मृत्यु पर आगे के सारे प्रीमियम की इन-बिल्ट माफी।",
+        "परिवार को हर साल बीमा राशि का 10% सालाना इनकम सपोर्ट।",
+        "पॉलिसी के अंत में पूरी मैच्योरिटी राशि (110% बीमा राशि + बोनस) का भुगतान।",
+        "धारा 80C के तहत भारी टैक्स बचत।"
+      ]
+    }
+  },
+  "736": {
+    name: { en: "Jeevan Labh - 736", hi: "जीवन लाभ - 736" },
+    eligibility: { en: "8 to 59 Years", hi: "8 से 59 वर्ष" },
+    what: {
+      en: "A limited premium paying, non-linked endowment plan offering high savings and life protection.",
+      hi: "कम समय तक प्रीमियम भरने वाला प्लान, जिसमें बचत और सुरक्षा के साथ LIC का सबसे ज्यादा बोनस (रिटर्न) मिलता है।"
+    },
+    why: {
+      en: "Pay for shorter durations (e.g. 10, 13, 16 years) and get cover and maturity for longer periods (e.g. 16, 21, 25 years). High returns.",
+      hi: "प्रीमियम कम समय तक भरें (जैसे 10, 13 या 16 साल) और लाभ लंबे समय तक उठाएं (जैसे 16, 21 या 25 साल)। इसमें रिटर्न बहुत अच्छे मिलते हैं।"
+    },
+    benefits: {
+      en: [
+        "Pay for limited years, stay protected for full term.",
+        "Maximum savings and high bonus rates.",
+        "Critical illness and accidental riders available.",
+        "Tax exemptions under Section 80C and 10(10D)."
+      ],
+      hi: [
+        "कम साल प्रीमियम भरें, पूरे पॉलिसी टर्म तक सुरक्षित रहें।",
+        "LIC में सबसे ज्यादा बोनस रेट और बेहतरीन बचत।",
+        "गंभीर बीमारी और एक्सीडेंटल कवर जोड़ने की सुविधा।",
+        "प्रीमियम और मैच्योरिटी दोनों पर टैक्स में पूरी छूट।"
+      ]
+    }
+  },
+  "760": {
+    name: { en: "Bima Jyoti - 760", hi: "बीमा ज्योति - 760" },
+    eligibility: { en: "0 to 60 Years", hi: "0 से 60 वर्ष" },
+    what: {
+      en: "An individual savings plan offering guaranteed additions of Rs. 50 per thousand of Sum Assured every single year.",
+      hi: "हर साल ₹50 प्रति हजार का गारंटीड बोनस (एडिशन) देने वाला प्लान। यानी आपके निवेश पर रिटर्न पक्का और तय होता है।"
+    },
+    why: {
+      en: "Best for conservative investors who want absolute clarity on their maturity value without relying on variable bonus declarations.",
+      hi: "उन निवेशकों के लिए बेस्ट जो पहले दिन से ही जानना चाहते हैं कि उन्हें अंत में पक्का कितना पैसा मिलेगा।"
+    },
+    benefits: {
+      en: [
+        "Guaranteed additions of ₹50 per ₹1,000 Sum Assured annually.",
+        "Short premium paying terms (Policy term minus 5 years).",
+        "Low entry age (starts from 90 days of child).",
+        "Loan facility and rider benefits available."
+      ],
+      hi: [
+        "हर साल ₹50 प्रति हजार का पक्का गारंटीड बोनस।",
+        "लिमिटेड प्रीमियम टर्म (पॉलिसी टर्म से 5 साल कम प्रीमियम भरना)।",
+        "90 दिन के बच्चे से लेकर 60 साल तक के लोगों के लिए उपलब्ध।",
+        "लोन की सुविधा और एक्स्ट्रा सुरक्षा राइडर्स।"
+      ]
+    }
+  },
+  "912": {
+    name: { en: "Nav Jeevan Shree - 912 (Limited)", hi: "नव जीवन श्री - 912 (लिमिटेड)" },
+    eligibility: { en: "0 to 60 Years", hi: "0 से 60 वर्ष" },
+    what: {
+      en: "A limited premium paying non-participating plan offering guaranteed additions and high life cover.",
+      hi: "कम समय प्रीमियम भरने वाला प्लान, जिसमें गारंटीड रिटर्न और बड़ा लाइफ कवर एक साथ मिलता है।"
+    },
+    why: {
+      en: "Ideal if you want a guaranteed lump sum payout for specific short-to-medium term goals with premium payment flexibility.",
+      hi: "यदि आप छोटे या मध्यम अवधि के लक्ष्यों के लिए पक्का एकमुश्त पैसा चाहते हैं और ज्यादा समय तक प्रीमियम नहीं भरना चाहते।"
+    },
+    benefits: {
+      en: [
+        "Short premium payment options (6, 8, 10, or 12 years).",
+        "Guaranteed additions for complete safety of capital.",
+        "Maturity and death benefit payout in installments options.",
+        "Higher Sum Assured discounts/rebates."
+      ],
+      hi: [
+        "कम समय प्रीमियम भुगतान (6, 8, 10, या 12 साल का विकल्प)।",
+        "पूंजी की सुरक्षा के साथ गारंटीड रिटर्न (Guaranteed Additions)।",
+        "मैच्योरिटी या मृत्यु का पैसा किस्तों में लेने का विकल्प।",
+        "बड़ी बीमा राशि लेने पर प्रीमियम में भारी छूट।"
+      ]
+    }
+  },
+  "888": {
+    name: { en: "New Jeevan Sathi - 888 (Single)", hi: "न्यू जीवन साथी - 888 (सिंगल)" },
+    eligibility: { en: "18 to 60 Years", hi: "18 से 60 वर्ष" },
+    what: {
+      en: "A joint life, single premium savings plan designed for married couples to secure their joint future with a single investment.",
+      hi: "पति-पत्नी के लिए एक ही बार प्रीमियम देकर पूरी जिंदगी की सुरक्षा वाला जॉइंट प्लान।"
+    },
+    why: {
+      en: "Excellent for couples who want to invest a lump sum together and get double life cover and guaranteed additions.",
+      hi: "उन शादीशुदा जोड़ों के लिए बेस्ट जो एक बार में पैसा लगाकर दोनों का बीमा चाहते हैं और पक्का रिटर्न पाना चाहते हैं।"
+    },
+    benefits: {
+      en: [
+        "Single premium cover for both spouses under one policy.",
+        "Guaranteed additions of Rs 70 per Rs 1,000 Sum Assured yearly.",
+        "Liquidity via loan against joint policy.",
+        "Tax benefit under Section 80C."
+      ],
+      hi: [
+        "एक ही पॉलिसी में पति-पत्नी दोनों के लिए सिंगल प्रीमियम कवर।",
+        "हर साल ₹70 प्रति हजार का शानदार गारंटीड बोनस।",
+        "जॉइंट पॉलिसी पर आसानी से लोन लेने की सुविधा।",
+        "धारा 80C के तहत टैक्स में छूट का लाभ।"
+      ]
+    }
+  },
+  "889": {
+    name: { en: "New Jeevan Sathi - 889 (Limited)", hi: "न्यू जीवन साथी - 889 (लिमिटेड)" },
+    eligibility: { en: "18 to 50 Years", hi: "18 से 50 वर्ष" },
+    what: {
+      en: "A joint life, limited premium paying plan for married couples. If one spouse passes away, all future premiums are waived.",
+      hi: "पति-पत्नी के लिए लिमिटेड प्रीमियम जॉइंट प्लान, जिसमें एक पार्टनर की मृत्यु पर आगे के सारे प्रीमियम माफ हो जाते हैं और पॉलिसी जारी रहती है।"
+    },
+    why: {
+      en: "Protects the surviving spouse from premium burden while continuing all policy benefits and life cover.",
+      hi: "यह दूसरे पार्टनर को प्रीमियम के बोझ से बचाता है और पॉलिसी के सारे फायदे व लाइफ कवर बिना किसी प्रीमियम के चालू रखता है।"
+    },
+    benefits: {
+      en: [
+        "Joint life coverage with premium payment terms of 5, 10, or 15 years.",
+        "Premium waiver benefit on the death of first spouse.",
+        "Guaranteed additions of 7% of annual premium yearly.",
+        "Flexible death benefit payment options."
+      ],
+      hi: [
+        "5, 10 या 15 साल के प्रीमियम भुगतान के साथ जॉइंट लाइफ कवर।",
+        "पहले पार्टनर की मृत्यु होने पर आगे के सारे प्रीमियम की माफी।",
+        "सालाना प्रीमियम पर हर साल 7% का गारंटीड बोनस।",
+        "मृत्यु लाभ (Death Benefit) को किस्तों में पाने का विकल्प।"
+      ]
+    }
+  },
+  "720": {
+    name: { en: "Money Back (20 Year) - 720", hi: "मनी बैक (20 वर्ष) - 720" },
+    eligibility: { en: "13 to 50 Years", hi: "13 से 50 वर्ष" },
+    what: {
+      en: "A popular plan providing survival benefits (20% of Sum Assured) every 5th, 10th, and 15th year, and 40% plus bonus at maturity.",
+      hi: "हर 5 साल में 20% मनीबैक (पैसा वापस) देने वाला प्लान। 5वें, 10वें और 15वें साल में 20-20% मिलता है और 20वें साल में बाकी 40% और बोनस मिलता है।"
+    },
+    why: {
+      en: "Best if you need regular cash payouts every few years for recurring events (like school fees, home renovation) while keeping full life cover active.",
+      hi: "यदि आपको हर कुछ वर्षों में बड़े खर्चों (जैसे स्कूल फीस, मकान की मरम्मत) के लिए पैसों की जरूरत होती है और साथ में पूरा रिस्क कवर भी चाहिए।"
+    },
+    benefits: {
+      en: [
+        "Regular cash flow every 5 years.",
+        "Life cover continues for 100% of Sum Assured despite money-back payouts.",
+        "Final lump sum maturity with accumulated bonuses.",
+        "Tax benefits under 80C."
+      ],
+      hi: [
+        "हर 5 साल में नियमित पैसा वापस (मनीबैक)।",
+        "मनीबैक मिलने के बाद भी लाइफ कवर 100% पर बना रहता है।",
+        "पॉलिसी के अंत में बोनस के साथ बड़ी एकमुश्त रकम।",
+        "प्रीमियम भुगतान पर आयकर अधिनियम 80C में छूट।"
+      ]
+    }
+  },
+  "721": {
+    name: { en: "Money Back (25 Year) - 721", hi: "मनी बैक (25 वर्ष) - 721" },
+    eligibility: { en: "13 to 45 Years", hi: "13 से 45 वर्ष" },
+    what: {
+      en: "A 25-year term money back plan paying 15% of Sum Assured at the end of 5th, 10th, 15th, and 20th years, and 40% plus bonus at maturity.",
+      hi: "25 साल का मनीबैक प्लान। इसमें 5वें, 10वें, 15वें और 20वें साल में 15-15% पैसा वापस मिलता है और 25वें साल में बाकी 40% और सारा बोनस एक साथ मिलता है।"
+    },
+    why: {
+      en: "Ideal for long-term planning with periodic cash requirements over a larger policy term of 25 years.",
+      hi: "लंबे समय की प्लानिंग के लिए बेस्ट, जहां आपको समय-समय पर पैसों की जरूरत भी पूरी होती है और सुरक्षा भी लंबी मिलती है।"
+    },
+    benefits: {
+      en: [
+        "Four periodic cash payouts of 15% during the term.",
+        "Full risk cover remains active throughout the 25 years.",
+        "Maturity lump sum with high bonuses.",
+        "Loan facility available after 2 premium payments."
+      ],
+      hi: [
+        "पॉलिसी के दौरान 4 बार 15-15% पैसा वापस।",
+        "पूरे 25 साल तक पूरा लाइफ कवर (इंश्योरेंस) बना रहता है।",
+        "मैच्योरिटी पर बोनस के साथ बड़ी बचत राशि।",
+        "2 साल प्रीमियम भरने के बाद पॉलिसी पर लोन की सुविधा।"
+      ]
+    }
+  },
+  "748": {
+    name: { en: "Bima Shree - 748", hi: "बीमा श्री - 748" },
+    eligibility: { en: "8 to 55 Years", hi: "8 से 55 वर्ष" },
+    what: {
+      en: "A premium money-back plan for high net worth individuals, offering money back, guaranteed additions, and high sum assured options.",
+      hi: "अधिक आय वाले (HNI) लोगों के लिए प्रीमियम मनीबैक प्लान, जिसमें समय-समय पर पैसा वापस मिलने के साथ-साथ बहुत ज्यादा गारंटीड बोनस जुड़ता है।"
+    },
+    why: {
+      en: "Designed specifically for high-income earners who want high liquidity, guaranteed additions, and premium insurance protection.",
+      hi: "यदि आप अपनी बड़ी बचत को सुरक्षित रखकर समय-समय पर मनीबैक और सरकारी गारंटी के साथ बेहतरीन रिटर्न पाना चाहते हैं।"
+    },
+    benefits: {
+      en: [
+        "High minimum Sum Assured of ₹10 Lakhs.",
+        "Attractive periodic money-back payments.",
+        "High guaranteed additions added to the policy.",
+        "In-built critical illness cover."
+      ],
+      hi: [
+        "न्यूनतम बीमा ₹10 लाख से शुरू (प्रीमियम सेगमेंट)।",
+        "समय-समय पर मिलने वाला शानदार मनीबैक।",
+        "हर साल जुड़ने वाला बहुत बड़ा गारंटीड बोनस।",
+        "गंभीर बीमारियों (Critical Illness) के लिए इन-बिल्ट सुरक्षा।"
+      ]
+    }
+  },
+  "881": {
+    name: { en: "Bima Lakshmi - 881", hi: "बीमा लक्ष्मी - 881" },
+    eligibility: { en: "18 to 50 Years", hi: "18 से 50 वर्ष" },
+    what: {
+      en: "A money-back plan launched exclusively for women, combining financial savings, periodic money back, and family protection.",
+      hi: "महिलाओं के लिए खास तौर पर बनाया गया मनीबैक प्लान, जिसमें बचत के साथ-साथ समय-समय पर पैसा वापस (मनीबैक) मिलता है।"
+    },
+    why: {
+      en: "Perfect for women to secure their own financial independence and build a corpus for their future needs with high safety.",
+      hi: "महिलाओं की आत्मनिर्भरता और उनकी भविष्य की जरूरतों (जैसे बच्चों की पढ़ाई, ज्वेलरी या खुद का काम) के लिए बचत का सबसे सुरक्षित माध्यम।"
+    },
+    benefits: {
+      en: [
+        "Exclusively designed for female policyholders.",
+        "Periodic money-back payments at regular intervals.",
+        "Guaranteed additions added yearly.",
+        "Loan facility available after 1 policy year."
+      ],
+      hi: [
+        "विशेष रूप से केवल महिलाओं के लिए उपलब्ध।",
+        "निश्चित समय अंतरालों पर मनीबैक का भुगतान।",
+        "हर साल पक्का जुड़ने वाला गारंटीड बोनस।",
+        "मात्र 1 साल बाद पॉलिसी पर लोन लेने की छूट।"
+      ]
+    }
+  },
+  "745": {
+    name: { en: "Jeevan Umang - 745", hi: "जीवन उमंग - 745" },
+    eligibility: { en: "0 to 55 Years", hi: "0 से 55 वर्ष" },
+    what: {
+      en: "A whole life plan providing 8% of Sum Assured as guaranteed yearly income after premium paying term until age 100 or demise.",
+      hi: "जीवनभर 8% की गारंटीड सालाना इनकम (पेंशन) देने वाला प्लान। प्रीमियम खत्म होने के बाद 100 साल की उम्र तक या जीवनभर हर साल 8% मिलता रहेगा।"
+    },
+    why: {
+      en: "The ultimate tax-free retirement plan. Pay for a fixed term (e.g. 15 years) and get guaranteed income and life cover up to 100 years.",
+      hi: "बुढ़ापे और टैक्स-फ्री पेंशन के लिए सबसे बेहतरीन प्लान। कम समय प्रीमियम भरें (जैसे 15 साल) और जीवनभर टैक्स-फ्री 8% सालाना ब्याज या पेंशन पाएं।"
+    },
+    benefits: {
+      en: [
+        "Lifetime 8% guaranteed tax-free annual payout.",
+        "Life cover remains active up to age 100.",
+        "Huge lump sum payout to nominee upon demise.",
+        "Loan and surrender facility available."
+      ],
+      hi: [
+        "जीवनभर 8% की पक्की गारंटीड टैक्स-फ्री सालाना इनकम।",
+        "100 साल की उम्र तक पूरा लाइफ इंश्योरेंस कवर।",
+        "मृत्यु के समय नॉमिनी को बहुत बड़ा एकमुश्त फंड।",
+        "लोन और पॉलिसी बंद करने (Surrender) की आसान सुविधा।"
+      ]
+    }
+  },
+  "771": {
+    name: { en: "Jeevan Utsav - 771", hi: "जीवन उत्सव - 771" },
+    eligibility: { en: "0 to 65 Years", hi: "0 से 65 वर्ष" },
+    what: {
+      en: "A lifetime guaranteed income plan of 10% of Sum Assured every year after premium paying term (PPT 5 to 16 years).",
+      hi: "जीवनभर 10% की पक्की गारंटीड सालाना इनकम (पेंशन) देने वाला नया प्लान। इसमें प्रीमियम केवल 5 से 16 साल तक भरना होता है।"
+    },
+    why: {
+      en: "Best for creating a guaranteed regular income stream for life with short premium paying term options.",
+      hi: "यदि आप केवल कुछ ही वर्ष प्रीमियम भरकर अपने और अपने बच्चों के लिए जीवनभर के लिए 10% का पक्का फिक्स रिटर्न चालू करना चाहते हैं।"
+    },
+    benefits: {
+      en: [
+        "Lifetime 10% guaranteed income or flexi income accumulation option.",
+        "Short PPT (starts from 5 years).",
+        "Whole life cover protection.",
+        "Tax benefits under prevailing laws."
+      ],
+      hi: [
+        "जीवनभर 10% की पक्की इनकम (या ब्याज के साथ जमा करने का विकल्प)।",
+        "मात्र 5 साल का भी प्रीमियम पेमेंट टर्म उपलब्ध।",
+        "पूरी जिंदगी के लिए लाइफ इंश्योरेंस सुरक्षा।",
+        "टैक्स में छूट और मैच्योरिटी लाभ।"
+      ]
+    }
+  },
+  "883": {
+    name: { en: "Jeevan Utsav - 883 (Single)", hi: "जीवन उत्सव - 883 (सिंगल)" },
+    eligibility: { en: "0 to 65 Years", hi: "0 से 65 वर्ष" },
+    what: {
+      en: "A single premium whole life plan. Pay premium once and get guaranteed 10% of Sum Assured as lifetime income every year.",
+      hi: "एक बार प्रीमियम भरकर जीवनभर 10% की गारंटीड सालाना इनकम पाने वाला होल लाइफ प्लान।"
+    },
+    why: {
+      en: "Best for investing a lump sum to start a guaranteed, lifelong regular income for children or yourself with full safety.",
+      hi: "एकमुश्त पैसा निवेश करके अपने बच्चों या खुद के लिए जीवनभर का फिक्स 10% सालाना इनकम और लाइफ कवर शुरू करने के लिए बेस्ट।"
+    },
+    benefits: {
+      en: [
+        "Single premium payment (one-time investment).",
+        "Guaranteed additions of ₹40 per ₹1,000 Sum Assured.",
+        "Accumulate income at 5.5% interest rate option.",
+        "Lifelong protection for family."
+      ],
+      hi: [
+        "एक बार प्रीमियम का भुगतान (लम्प सम निवेश)।",
+        "शुरुआती वर्षों में ₹40 प्रति हजार का guaranteed एडिशन बोनस।",
+        "पेंशन को 5.5% ब्याज के साथ जमा रखने की सुविधा।",
+        "परिवार के लिए जीवनभर का सुरक्षा कवच।"
+      ]
+    }
+  },
+  "732": {
+    name: { en: "New Children's Money Back - 732", hi: "न्यू चिल्ड्रेन्स मनी बैक - 732" },
+    eligibility: { en: "0 to 12 Years", hi: "0 से 12 वर्ष" },
+    what: {
+      en: "A child plan where money back is paid at age 18, 20, and 22 (20% of Sum Assured each) to support education, and 40% + bonus at age 25.",
+      hi: "बच्चों की उच्च शिक्षा के लिए मनीबैक प्लान। बच्चा जब 18, 20 और 22 साल का होगा, तो उसे 20-20% पैसा मिलेगा और 25 साल की उम्र पर बाकी 40% और सारा बोनस मिलेगा।"
+    },
+    why: {
+      en: "Perfect to fund your child's college admission, graduation, and early career setup at the right age milestones.",
+      hi: "बच्चे की कॉलेज में एंट्री, ग्रेजुएशन और करियर शुरू करने की सही उम्र में पैसों की ज़रूरत को पूरा करने का सबसे बढ़िया माध्यम।"
+    },
+    benefits: {
+      en: [
+        "Payouts aligned with child's higher education milestones.",
+        "High bonus additions to build a large fund.",
+        "Premium Waiver Option available (waives premium if parent demises).",
+        "Loan facility for parent."
+      ],
+      hi: [
+        "बच्चे की उच्च शिक्षा के समय निश्चित पैसा वापस।",
+        "बड़ा फंड बनाने के लिए अच्छा बोनस मिलता है।",
+        "प्रीमियम वेवर राइडर (पिता की मृत्यु पर आगे के सारे प्रीमियम माफ)।",
+        "जरूरत पड़ने पर माता-पिता के लिए लोन की सुविधा।"
+      ]
+    }
+  },
+  "734": {
+    name: { en: "Jeevan Tarun - 734", hi: "जीवन तरुण - 734" },
+    eligibility: { en: "0 to 12 Years", hi: "0 से 12 वर्ष" },
+    what: {
+      en: "A flexible child plan for education and marriage with 4 options to choose how survival benefits are paid from age 20 to 24, and maturity at 25.",
+      hi: "बच्चों की पढ़ाई और शादी के लिए एक लचीला प्लान। इसमें 4 विकल्प मिलते हैं कि आप 20 से 24 साल की उम्र में कितना पैसा वापस चाहते हैं और 25 साल पर कितनी मैच्योरिटी।"
+    },
+    why: {
+      en: "Offers complete flexibility to customize the payouts according to your child's specific higher education costs.",
+      hi: "यह आपको बच्चे की पढ़ाई के खर्चों के अनुसार पैसे वापस पाने के तरीके को खुद चुनने की आजादी देता है।"
+    },
+    benefits: {
+      en: [
+        "4 flexible survival benefit options to choose from.",
+        "Limited premium payment (pay till child is 20, policy runs till 25).",
+        "High bonus additions.",
+        "Optional Premium Waiver Benefit Rider."
+      ],
+      hi: [
+        "पैसे वापस (मनीबैक) पाने के 4 अलग-अलग विकल्प।",
+        "लिमिटेड प्रीमियम (बच्चे के 20 साल होने तक प्रीमियम भरें, पॉलिसी 25 साल तक चलेगी)।",
+        "शानदार बोनस एडिशन लाभ।",
+        "प्रीमियम वेवर बेनिफिट (प्रीमियम माफी) राइडर की सुविधा।"
+      ]
+    }
+  },
+  "774": {
+    name: { en: "Amrit Baal - 774", hi: "अमृत बाल - 774" },
+    eligibility: { en: "0 to 13 Years", hi: "0 से 13 वर्ष" },
+    what: {
+      en: "A child savings plan with guaranteed additions of ₹80 per ₹1,000 Sum Assured every year, providing a massive education corpus.",
+      hi: "बच्चों के लिए सबसे ज्यादा रिटर्न देने वाला प्लान। इसमें हर साल ₹80 प्रति हजार का बहुत बड़ा गारंटीड बोनस जुड़ता है, जिससे बच्चों की पढ़ाई के लिए बड़ा फंड बनता है।"
+    },
+    why: {
+      en: "Unmatched safety and high guaranteed growth to beat inflation in education costs for newborn babies to young kids.",
+      hi: "शिक्षा के बढ़ते खर्चों से निपटने के लिए नवजात बच्चों से लेकर 13 साल तक के बच्चों के लिए सबसे सुरक्षित और सबसे ज्यादा गारंटीड रिटर्न वाला प्लान।"
+    },
+    benefits: {
+      en: [
+        "Guaranteed additions of ₹80 per ₹1,000 Sum Assured annually.",
+        "Limited premium paying options (5, 6, 7 years) or Single premium.",
+        "Premium waiver benefit for parent.",
+        "Maturity payout option in installments."
+      ],
+      hi: [
+        "प्रतिवर्ष ₹80 प्रति हजार का बहुत बड़ा गारंटीड बोनस एडिशन।",
+        "मात्र 5, 6 या 7 साल प्रीमियम भरने या सिंगल प्रीमियम का विकल्प।",
+        "माता-पिता के लिए इन-बिल्ट प्रीमियम माफी की सुविधा।",
+        "मैच्योरिटी के पैसे को किस्तों में लेने का विकल्प।"
+      ]
+    }
+  },
+  "955": {
+    name: { en: "New Jeevan Amar - 955", hi: "न्यू जीवन अमर - 955" },
+    eligibility: { en: "18 to 65 Years", hi: "18 से 65 वर्ष" },
+    what: {
+      en: "A pure term life insurance plan that offers high financial security to your family at very low premium rates.",
+      hi: "एक प्योर टर्म इंश्योरेंस प्लान जो बहुत ही कम प्रीमियम में आपके परिवार को बहुत बड़ा वित्तीय सुरक्षा कवच (लाइफ कवर) देता है।"
+    },
+    why: {
+      en: "Essential for every breadwinner. In case of your absence, the family receives the full sum assured to pay off debts and live comfortably.",
+      hi: "हर कमाने वाले व्यक्ति के लिए सबसे जरूरी प्लान। यदि आपको कुछ हो जाता है, तो परिवार को पूरा पैसा मिलता है ताकि वे कर्ज चुका सकें और सम्मान से जी सकें।"
+    },
+    benefits: {
+      en: [
+        "High life cover at lowest possible premium costs.",
+        "Special discounted rates for non-smokers and female lives.",
+        "Flexibility of Regular, Limited, or Single premium payment.",
+        "Option to choose Level Sum Assured or Increasing Sum Assured."
+      ],
+      hi: [
+        "न्यूनतम प्रीमियम दरों पर बहुत बड़ा लाइफ कवर।",
+        "धूम्रपान न करने वालों और महिलाओं के लिए विशेष छूट।",
+        "रेगुलर, लिमिटेड या सिंगल प्रीमियम भरने के आसान विकल्प।",
+        "बीमा राशि को बढ़ाने (Increasing Cover) या फिक्स रखने का विकल्प।"
+      ]
+    }
+  },
+  "875": {
+    name: { en: "YUVA TERM - 875", hi: "युवा टर्म - 875" },
+    eligibility: { en: "18 to 45 Years", hi: "18 से 45 वर्ष" },
+    what: {
+      en: "A modern term insurance plan designed specifically for younger individuals (18-45 yrs) offering lower rates and high protection.",
+      hi: "युवाओं (18 से 45 साल) के लिए विशेष रूप से डिज़ाइन किया गया टर्म प्लान, जो बहुत ही कम दरों पर बड़ा लाइफ कवर देता है।"
+    },
+    why: {
+      en: "Buy early when you are healthy to lock in the lowest possible life insurance premium for the rest of your working life.",
+      hi: "कम उम्र और अच्छी सेहत में ही इस प्लान को लेकर जीवनभर के लिए सबसे कम प्रीमियम पर बड़ा सुरक्षा कवच लॉक करने का बेहतरीन मौका।"
+    },
+    benefits: {
+      en: [
+        "Highly affordable rates customized for youth.",
+        "Option of Increasing Cover to match your life stages.",
+        "Death benefits can be received in installments.",
+        "Tax savings under Section 80C."
+      ],
+      hi: [
+        "युवाओं की उम्र के हिसाब से बेहद सस्ता प्रीमियम।",
+        "समय के साथ बीमा बढ़ाने (Increasing Cover) का विकल्प।",
+        "मृत्यु लाभ को किस्तों में पाने की सुविधा।",
+        "धारा 80C के तहत टैक्स बचत का लाभ।"
+      ]
+    }
+  },
+  "877": {
+    name: { en: "Yuva Credit Life - 877", hi: "युवा क्रेडिट लाइफ - 877" },
+    eligibility: { en: "18 to 45 Years", hi: "18 से 45 वर्ष" },
+    what: {
+      en: "A decreasing term insurance plan specifically designed to protect your family from loan liabilities in your absence.",
+      hi: "घटता हुआ टर्म इंश्योरेंस प्लान (Decreasing Term Cover)। यह आपके होम लोन, कार लोन या पर्सनल लोन की सुरक्षा के लिए बनाया गया है।"
+    },
+    why: {
+      en: "Ensures that if something happens to you, your family doesn't lose their home or face loan recovery agents; the insurance pays the debt.",
+      hi: "यदि आपको कुछ हो जाए, तो बीमा कंपनी आपका लोन चुकाएगी और आपके परिवार के ऊपर कर्ज का बोझ या घर खोने का डर नहीं रहेगा।"
+    },
+    benefits: {
+      en: [
+        "Cover reduces as your outstanding loan amount reduces.",
+        "Protects home loans, vehicle loans, and personal loans.",
+        "Single or Limited premium options.",
+        "Very cost-effective security for assets."
+      ],
+      hi: [
+        "लोन घटने के साथ-साथ बीमा कवर भी घटता है, जिससे प्रीमियम बहुत सस्ता होता है।",
+        "होम लोन, पर्सनल लोन और अन्य लोन की सुरक्षा के लिए सबसे बेस्ट।",
+        "एकमुश्त (Single) या शॉर्ट प्रीमियम भुगतान का विकल्प।",
+        "आपकी प्रॉपर्टी और एसेट्स के लिए बहुत ही सस्ती सुरक्षा।"
+      ]
+    }
+  },
+  "887": {
+    name: { en: "Bima Kavach - 887", hi: "बीमा कवच - 887" },
+    eligibility: { en: "18 to 65 Years", hi: "18 से 65 वर्ष" },
+    what: {
+      en: "A high-value pure risk term plan with a minimum Sum Assured of ₹2 Crore, offering substantial security up to age 100.",
+      hi: "बड़े व्यापारियों और अधिक आय वालों के लिए ₹2 करोड़ से शुरू होने वाला टर्म प्लान, जो 100 साल की उम्र तक सुरक्षा दे सकता है।"
+    },
+    why: {
+      en: "Best for business owners, corporate executives, and HNIs who need high-value protection and keyman insurance.",
+      hi: "यदि आपका कोई बड़ा बिजनेस या लोन है और आप अपने परिवार और व्यापार को सुरक्षित करने के लिए बहुत बड़े लाइफ कवर (₹2 करोड़+) की तलाश में हैं।"
+    },
+    benefits: {
+      en: [
+        "Minimum Sum Assured is ₹2 Crore.",
+        "Coverage available up to age 100.",
+        "Life Stage benefit allows increasing cover without medicals.",
+        "Special rates for non-smokers."
+      ],
+      hi: [
+        "न्यूनतम बीमा ₹2 करोड़ (बड़ा लाइफ कवर)।",
+        "100 साल की उम्र तक कवर उपलब्ध।",
+        "शादी या बच्चों के होने पर बिना मेडिकल के बीमा राशि बढ़ाने की सुविधा।",
+        "धूम्रपान न करने वालों के लिए विशेष रूप से कम दरें।"
+      ]
+    }
+  },
+  "859": {
+    name: { en: "Saral Jeevan Bima - 859", hi: "सरल जीवन बीमा - 859" },
+    eligibility: { en: "18 to 65 Years", hi: "18 से 65 वर्ष" },
+    what: {
+      en: "A standard, simple pure term life insurance plan with uniform terms and conditions across all insurers.",
+      hi: "एक सरल और मानक प्योर टर्म प्लान, जिसके नियम और शर्तें बहुत ही आसान और स्पष्ट हैं। इसे कोई भी ले सकता है।"
+    },
+    why: {
+      en: "No complications, no strict income restrictions. Best for individuals who want a simple, transparent life cover to secure their family.",
+      hi: "बिना किसी जटिलता के एक आसान लाइफ कवर। यह मध्यम वर्ग और स्वरोजगार करने वाले लोगों के लिए परिवार की सुरक्षा का सबसे सरल माध्यम है।"
+    },
+    benefits: {
+      en: [
+        "Standardized and easy-to-understand terms.",
+        "No complex underwriting or income verification barriers.",
+        "Highly affordable premiums.",
+        "Regular, Limited (5 or 10 years), or Single premium pay."
+      ],
+      hi: [
+        "मानकीकृत (Standard) और समझने में बेहद आसान नियम।",
+        "बिना किसी जटिल कागजी कार्रवाई के आसानी से उपलब्ध।",
+        "बहुत ही किफायती प्रीमियम दरें।",
+        "नियमित, लिमिटेड (5 या 10 साल) या एकमुश्त प्रीमियम का विकल्प।"
+      ]
+    }
+  },
+  "857": {
+    name: { en: "Jeevan Akshay-VII - 857", hi: "जीवन अक्षय-VII - 857" },
+    eligibility: { en: "25 to 100 Years", hi: "25 से 100 वर्ष" },
+    what: {
+      en: "An immediate annuity plan. Pay a lump sum once, and your monthly, quarterly, or annual pension starts immediately for life.",
+      hi: "तुरंत पेंशन शुरू करने वाला प्लान। एक बार पैसा जमा करें और अगले ही महीने से जीवनभर के लिए अपनी मनपसंद पेंशन (सालाना, छमाही या मासिक) पाएं।"
+    },
+    why: {
+      en: "Perfect for retirees who want to immediately secure a guaranteed regular income stream after receiving their retirement funds.",
+      hi: "यदि आप अभी-अभी रिटायर हुए हैं और अपने पीएफ या ग्रेच्युटी के पैसे को ऐसी जगह रखना चाहते हैं जहां से तुरंत जीवनभर के लिए फिक्स पेंशन शुरू हो जाए।"
+    },
+    benefits: {
+      en: [
+        "Pension starts immediately after purchase.",
+        "10 different annuity options (single life, joint life, etc.).",
+        "Option to return 100% purchase price to nominee on death.",
+        "Guaranteed pension rate for life."
+      ],
+      hi: [
+        "पॉलिसी लेते ही तुरंत पेंशन चालू (अगले महीने से)।",
+        "10 अलग-अलग पेंशन विकल्प (सिंगल लाइफ, जॉइंट लाइफ आदि)।",
+        "मृत्यु के बाद नॉमिनी को पूरी जमा पूंजी वापस (Return of Purchase Price) मिलने का विकल्प।",
+        "जीवनभर के लिए फिक्स ब्याज दर की गारंटी।"
+      ]
+    }
+  },
+  "758": {
+    name: { en: "New Jeevan Shanti - 758", hi: "न्यू जीवन शांति - 758" },
+    eligibility: { en: "30 to 79 Years", hi: "30 से 79 वर्ष" },
+    what: {
+      en: "A deferred annuity plan. Pay a lump sum once, defer pension for 1 to 12 years, and get a much higher guaranteed lifetime pension.",
+      hi: "कुछ समय बाद पेंशन शुरू करने वाला प्लान (Deferred Annuity)। आज एकमुश्त पैसा जमा करें, और 1 से 12 साल बाद अपनी पसंद से बहुत ज्यादा दर पर लाइफटाइम पेंशन शुरू करवाएं।"
+    },
+    why: {
+      en: "Best for working professionals who are 5 to 10 years away from retirement and want to secure a high pension rate today.",
+      hi: "यदि आपकी रिटायरमेंट में अभी 5 या 10 साल बाकी हैं और आप आज की अच्छी ब्याज दरों पर अपने बुढ़ापे की पेंशन को सुरक्षित लॉक करना चाहते हैं।"
+    },
+    benefits: {
+      en: [
+        "Higher pension rates as deferment period increases.",
+        "Flexible deferment periods from 1 to 12 years.",
+        "Guaranteed additions accrue during the deferment period.",
+        "Death benefit protection for nominee."
+      ],
+      hi: [
+        "जितनी देरी से पेंशन शुरू करेंगे, उतना ही ज्यादा पेंशन रेट मिलेगा।",
+        "1 से 12 साल तक का डिफरमेंट (वेटिंग) पीरियड चुनने की छूट।",
+        "पेंशन शुरू होने से पहले तक हर साल फंड में एक्स्ट्रा बोनस जुड़ता है।",
+        "मृत्यु की स्थिति में नॉमिनी को पूरा पैसा ब्याज के साथ वापस।"
+      ]
+    }
+  },
+  "879": {
+    name: { en: "Smart Pension - 879", hi: "स्मार्ट पेंशन - 879" },
+    eligibility: { en: "18 to 100 Years", hi: "18 से 100 वर्ष" },
+    what: {
+      en: "A flexible individual retirement pension plan designed to accumulate retirement savings and convert them into a stable annuity.",
+      hi: "बुढ़ापे के लिए पेंशन फंड बनाने का एक नया प्लान, जो आपके जमा पैसे को जीवनभर के सुरक्षित पेंशन में बदल देता है।"
+    },
+    why: {
+      en: "Allows you to plan early for retirement and build a strong corpus to maintain your lifestyle after you stop working.",
+      hi: "अपने कामकाजी जीवन में ही छोटी-छोटी बचत करके बुढ़ापे के लिए एक बड़ा फंड बनाने और आत्मनिर्भर सेवानिवृत्त जीवन जीने के लिए बेस्ट।"
+    },
+    benefits: {
+      en: [
+        "Market-linked or guaranteed retirement growth options.",
+        "Tax benefits on premium accumulation.",
+        "Guaranteed pension for single or joint life.",
+        "Option to withdraw a lump sum part at retirement."
+      ],
+      hi: [
+        "मार्केट से जुड़ा या गारंटीड ग्रोथ चुनने का विकल्प।",
+        "पेंशन बचत के दौरान टैक्स में छूट का लाभ।",
+        "खुद के लिए या पति-पत्नी के लिए जीवनभर फिक्स पेंशन।",
+        "रिटायरमेंट पर फंड का एक हिस्सा एकमुश्त टैक्स-फ्री निकालने की सुविधा।"
+      ]
+    }
+  },
+  "862": {
+    name: { en: "Saral Pension - 862", hi: "सरल पेंशन - 862" },
+    eligibility: { en: "40 to 80 Years", hi: "40 से 80 वर्ष" },
+    what: {
+      en: "A standard immediate annuity plan with simple, standardized terms. Pay once and get guaranteed lifetime pension.",
+      hi: "सरकारी नियमों के अनुसार एक मानक और बेहद सरल पेंशन प्लान। एक बार निवेश करें और जीवनभर फिक्स पेंशन पाएं।"
+    },
+    why: {
+      en: "Easy to understand, zero market risk, and guarantees the return of your full investment (purchase price) to your nominee.",
+      hi: "समझने में बेहद आसान, बिना किसी जोखिम के और मृत्यु के बाद आपके द्वारा जमा किया गया 100% पैसा आपके परिवार को सुरक्षित वापस मिल जाता है।"
+    },
+    benefits: {
+      en: [
+        "Guaranteed return of 100% purchase price to nominee upon death.",
+        "Immediate pension starts (monthly/quarterly/half-yearly/yearly).",
+        "Joint life option keeps pension active for spouse after husband.",
+        "Loan facility available after 6 months."
+      ],
+      hi: [
+        "मृत्यु पर जमा की गई पूरी रकम (Purchase Price) परिवार को वापस।",
+        "तुरंत पेंशन शुरू (मासिक, तिमाही, छमाही या सालाना विकल्प)।",
+        "जॉइंट लाइफ विकल्प (पति के बाद पत्नी को जीवनभर समान पेंशन)।",
+        "पॉलिसी शुरू होने के केवल 6 महीने बाद लोन की सुविधा।"
+      ]
+    }
+  },
+  "749": {
+    name: { en: "Nivesh Plus - 749", hi: "निवेश प्लस - 749" },
+    eligibility: { en: "0 to 70 Years", hi: "0 से 70 वर्ष" },
+    what: {
+      en: "A single premium unit-linked plan offering high investment growth in share market along with life cover in a single payment.",
+      hi: "एक ही बार प्रीमियम देकर शेयर बाजार के बेहतरीन रिटर्न और लाइफ इंश्योरेंस दोनों का फायदा देने वाला सिंगल प्रीमियम यूलिप (ULIP) प्लान।"
+    },
+    why: {
+      en: "Best if you have lump sum cash and want to invest in equity markets with the added safety of life insurance cover.",
+      hi: "यदि आप एक बार पैसा लगाकर शेयर बाजार में निवेश करना चाहते हैं और साथ में लाइफ कवर की सुरक्षा भी चाहते हैं।"
+    },
+    benefits: {
+      en: [
+        "One-time investment, no future payment liabilities.",
+        "Choice of 4 funds: Equity, Bond, Balanced, and Growth.",
+        "Unlimited free fund switching options.",
+        "Tax benefits under Section 80C and tax-free maturity."
+      ],
+      hi: [
+        "एक बार निवेश, भविष्य में प्रीमियम भरने का कोई झंझट नहीं।",
+        "4 फंड्स का विकल्प: इक्विटी (शेयर), बॉन्ड, बैलेंस्ड और ग्रोथ फंड।",
+        "बिना किसी चार्ज के फंड बदलने (Fund Switching) की सुविधा।",
+        "धारा 80C में छूट और पूरी मैच्योरिटी टैक्स-फ्री।"
+      ]
+    }
+  },
+  "873": {
+    name: { en: "Index Plus - 873", hi: "इंडेक्स प्लस - 873" },
+    eligibility: { en: "0 to 60 Years", hi: "0 से 60 वर्ष" },
+    what: {
+      en: "A unit-linked plan that specifically invests your premiums in top index funds (Nifty 50 or Nifty 100) for stable long-term wealth.",
+      hi: "शेयर बाजार के टॉप इंडेक्स फंड्स (Nifty 50/100) में निवेश करने वाला यूलिप प्लान, जो आपके पैसे को देश की बड़ी कंपनियों के साथ बढ़ाता है।"
+    },
+    why: {
+      en: "Ideal for long-term wealth creation. Capitalizes on India's economic growth through transparent index-based investing.",
+      hi: "लंबे समय में बड़ी संपत्ति बनाने के लिए बेस्ट। देश की सबसे बड़ी 50 कंपनियों में पारदर्शी और सुरक्षित तरीके से निवेश का फायदा।"
+    },
+    benefits: {
+      en: [
+        "Low charges compared to traditional mutual funds.",
+        "Direct investment in India's leading top index companies.",
+        "In-built life cover protection.",
+        "Refund of mortality charges on survival at maturity."
+      ],
+      hi: [
+        "पारंपरिक म्यूचुअल फंड की तुलना में बेहद कम चार्जेस।",
+        "भारत की शीर्ष कंपनियों (Index Stocks) में सीधा निवेश।",
+        "निवेश के साथ-साथ इन-बिल्ट लाइफ इंश्योरेंस।",
+        "मैच्योरिटी तक जीवित रहने पर काटे गए इंश्योरेंस चार्ज (Mortality Charges) की वापसी।"
+      ]
+    }
+  },
+  "752": {
+    name: { en: "SIIP - 752", hi: "एसआईआईपी - 752" },
+    eligibility: { en: "0 to 65 Years", hi: "0 से 65 वर्ष" },
+    what: {
+      en: "A regular premium unit-linked plan designed to build massive wealth over time while keeping your family insured.",
+      hi: "हर महीने या साल छोटी-छोटी किस्तों में निवेश करके शेयर बाजार के शानदार रिटर्न और लाइफ कवर पाने वाला सिस्टेमैटिक इन्वेस्टमेंट यूलिप प्लान।"
+    },
+    why: {
+      en: "Excellent alternative to mutual fund SIPs, with the added benefit of life insurance and tax savings on maturity.",
+      hi: "म्यूचुअल फंड SIP से बेहतर विकल्प, क्योंकि इसमें शेयर बाजार के रिटर्न के साथ-साथ बड़ा लाइफ इंश्योरेंस और टैक्स छूट भी मिलती है।"
+    },
+    benefits: {
+      en: [
+        "Systematic monthly or yearly investment options.",
+        "Guaranteed loyalty additions added to increase fund value.",
+        "100% refund of mortality charges at maturity.",
+        "No limit on free fund switching."
+      ],
+      hi: [
+        "मासिक या वार्षिक सिस्टेमैटिक निवेश (SIP की तरह)।",
+        "फंड वैल्यू बढ़ाने के लिए समय-समय पर एक्स्ट्रा लॉयल्टी बोनस।",
+        "मैच्योरिटी पर काटे गए सभी इंश्योरेंस चार्ज की 100% वापसी।",
+        "असीमित बार मुफ्त में फंड बदलने की छूट।"
+      ]
+    }
+  },
+  "867": {
+    name: { en: "New Pension Plus - 867", hi: "न्यू पेंशन प्लस - 867" },
+    eligibility: { en: "25 to 75 Years", hi: "25 से 75 वर्ष" },
+    what: {
+      en: "A unit-linked pension plan that grows your retirement corpus through market investments and secures a future pension.",
+      hi: "मार्केट से जुड़ा पेंशन प्लान (ULIP Pension), जो रिटायरमेंट के लिए बड़ा फंड बनाता है और बाद में उसे नियमित पेंशन में बदलता है।"
+    },
+    why: {
+      en: "Best for young professionals who want to build a pension corpus with higher equity returns over 15 to 30 years.",
+      hi: "यदि आप कम उम्र में ही रिटायरमेंट प्लानिंग शुरू करके शेयर बाजार की मदद से एक बहुत बड़ा पेंशन फंड बनाना चाहते हैं।"
+    },
+    benefits: {
+      en: [
+        "Guaranteed additions to enhance retirement fund.",
+        "Flexible investment strategies in debt and equity.",
+        "Single or regular premium paying options.",
+        "Easy conversion of corpus into lifetime guaranteed pension."
+      ],
+      hi: [
+        "पेंशन फंड बढ़ाने के लिए गारंटीड बोनस एडिशन।",
+        "डेट और इक्विटी फंड में सुविधानुसार निवेश का मौका।",
+        "एकमुश्त या नियमित प्रीमियम भुगतान की सुविधा।",
+        "जमा फंड को आसानी से लाइफटाइम गारंटीड पेंशन में बदलने की सुविधा।"
+      ]
+    }
+  },
+  "886": {
+    name: { en: "Protection Plus - 886", hi: "प्रोटेक्शन प्लस - 886" },
+    eligibility: { en: "18 to 65 Years", hi: "18 से 65 वर्ष" },
+    what: {
+      en: "A premium ULIP plan offering robust market returns, death cover, and refund of mortality charges at maturity.",
+      hi: "एक प्रीमियम यूलिप प्लान जो मार्केट के रिटर्न, डेथ कवर और मैच्योरिटी पर सभी इंश्योरेंस चार्ज (Mortality Charges) वापस देने की गारंटी देता है।"
+    },
+    why: {
+      en: "Offers high net worth investment growth with the absolute safety of returning insurance costs if you survive the term.",
+      hi: "यदि आप शेयर बाजार में निवेश के साथ-साथ एक मजबूत इंश्योरेंस कवर चाहते हैं और यह भी चाहते हैं कि आपका कोई भी चार्ज बेकार न जाए।"
+    },
+    benefits: {
+      en: [
+        "Premium high-growth investment fund options.",
+        "Refund of all mortality charges at policy maturity.",
+        "Partial withdrawals allowed after 5 lock-in years.",
+        "Top-up premium facilities to invest extra cash."
+      ],
+      hi: [
+        "शानदार ग्रोथ देने वाले प्रीमियम इन्वेस्टमेंट फंड्स।",
+        "मैच्योरिटी होने पर इंश्योरेंस के लिए काटे गए सभी चार्जेस की वापसी।",
+        "5 साल बाद जरूरत पड़ने पर आंशिक निकासी (Partial Withdrawal) की छूट।",
+        "अतिरिक्त बचत निवेश करने के लिए टॉप-अप की सुविधा।"
+      ]
+    }
+  },
+  "751": {
+    name: { en: "Micro Bachat - 751", hi: "माइक्रो बचत - 751" },
+    eligibility: { en: "18 to 55 Years", hi: "18 से 55 वर्ष" },
+    what: {
+      en: "A low-premium micro-insurance plan providing savings and protection for low-income individuals.",
+      hi: "बहुत ही कम प्रीमियम वाला माइक्रो-बचत प्लान। यह कम आय वाले परिवारों के लिए बचत और सुरक्षा का सबसे आसान तरीका है।"
+    },
+    why: {
+      en: "Designed to encourage small savings habits. Extremely low premiums with the full security of LIC and loyalty additions.",
+      hi: "छोटे-छोटे पैसे बचाकर एक सुरक्षित भविष्य बनाने की आदत डालने के लिए बेस्ट। इसमें प्रीमियम बहुत कम होता है और LIC की सुरक्षा पूरी मिलती है।"
+    },
+    benefits: {
+      en: [
+        "Very low premium rates affordable for everyone.",
+        "Combination of savings and life insurance cover.",
+        "Loyalty additions paid at maturity.",
+        "Loan facility available after 2 years."
+      ],
+      hi: [
+        "बहुत ही सस्ती प्रीमियम दरें जो हर बजट में फिट बैठती हैं।",
+        "एक ही प्लान में बचत और लाइफ इंश्योरेंस कवर।",
+        "मैच्योरिटी होने पर एक्स्ट्रा लॉयल्टी बोनस।",
+        "2 साल बाद जरूरत पड़ने पर लोन की आसान सुविधा।"
+      ]
+    }
+  },
+  "880": {
+    name: { en: "Jan Suraksha - 880", hi: "जन सुरक्षा - 880" },
+    eligibility: { en: "18 to 55 Years", hi: "18 से 55 वर्ष" },
+    what: {
+      en: "A simple micro-insurance savings plan offering guaranteed 4% additions annually with auto-cover features.",
+      hi: "कम आय वर्ग के लिए एक और बेहतरीन बचत प्लान, जिसमें हर साल 4% का गारंटीड बोनस मिलता है और पॉलिसी लैप्स होने पर भी बीमा चालू रहता है।"
+    },
+    why: {
+      en: "Best for daily wage earners or small shopkeepers. Includes auto-cover so the policy doesn't stop even if you miss premiums.",
+      hi: "छोटे दुकानदारों और दैनिक मजदूरों के लिए बेस्ट। इसमें ऑटो-कवर मिलता है, यानी 3 साल प्रीमियम भरने के बाद अगर प्रीमियम न भी भर पाएं तो कुछ समय तक बीमा चालू रहता है।"
+    },
+    benefits: {
+      en: [
+        "Guaranteed additions of 4% added at the end of each year.",
+        "Auto-cover facility keeps life cover active even if premium is delayed.",
+        "No medical examination required.",
+        "Flexible premium payment modes."
+      ],
+      hi: [
+        "हर साल 4% का पक्का गारंटीड बोनस एडिशन।",
+        "ऑटो-कवर (प्रीमियम छूटने पर भी 2 साल तक बीमा चालू रहने की गारंटी)।",
+        "बिना किसी मेडिकल टेस्ट के तुरंत उपलब्ध।",
+        "प्रीमियम भरने के बेहद आसान तरीके।"
+      ]
+    }
+  }
+};
+
+// Service Details Database
+const serviceDetails = {
+  s1: {
+    name: { en: "LIC Policy Consultation", hi: "LIC पॉलिसी सलाह" },
+    icon: "📋",
+    what: {
+      en: "A personalized guidance session to assess your financial goals, income, and liabilities, and identify the most suitable LIC plans for you and your family.",
+      hi: "आपकी वित्तीय स्थिति, आमदनी, देनदारियों और भविष्य के लक्ष्यों को समझकर आपके व आपके परिवार के लिए सबसे बेस्ट LIC प्लान चुनने में मदद करने की सेवा।"
+    },
+    why: {
+      en: "Buying insurance without professional advice can lead to choosing the wrong plan or insufficient coverage. A detailed consultation ensures your money is invested where it provides maximum security and returns.",
+      hi: "बिना सोचे-समझे पॉलिसी लेने से आपका पैसा गलत जगह फंस सकता है या आपको पूरा कवर नहीं मिल पाता। विशेषज्ञ की सलाह से आप सही प्लान चुनते हैं जो आपके सपनों को पूरा करे।"
+    },
+    benefits: {
+      en: [
+        "100% free expert financial analysis.",
+        "Custom premium calculations based on your budget.",
+        "Side-by-side comparison of different plan returns.",
+        "Clear explanation of terms without complex jargon."
+      ],
+      hi: [
+        "100% फ्री और एक्सपर्ट फाइनेंशियल एनालिसिस (बचत सलाह)।",
+        "आपके बजट के हिसाब से कस्टमाइज्ड प्रीमियम कैलकुलेशन।",
+        "अलग-अलग प्लान्स के फायदों की तुलनात्मक जानकारी।",
+        "बिना किसी जटिल नियम-शर्तों के आसान भाषा में स्पष्टीकरण।"
+      ]
+    }
+  },
+  s2: {
+    name: { en: "New Policy Issuance", hi: "नई पॉलिसी शुरू करना" },
+    icon: "🆕",
+    what: {
+      en: "Complete assistance in choosing, filling out, submitting, and initiating a brand new LIC life insurance policy.",
+      hi: "एक नई LIC जीवन बीमा पॉलिसी को चुनने से लेकर, उसके कागजात भरने, जमा करने और उसे शुरू करने तक की पूरी प्रक्रिया में मार्गदर्शन और सहायता।"
+    },
+    why: {
+      en: "Starting a new policy involves selecting appropriate riders, correct nominee details, and completing medical/financial documents. An experienced agent makes this process simple and error-free.",
+      hi: "नई पॉलिसी शुरू करने के लिए सही नॉमिनी, राइडर्स और मेडिकल कागजात की जरूरत होती है। हमारे साथ जुड़कर आप बिना किसी गलती के अपनी पॉलिसी सुरक्षित रूप से शुरू कर सकते हैं।"
+    },
+    benefits: {
+      en: [
+        "Doorstep documentation and guidance.",
+        "Assistance with medical examinations if required.",
+        "Secure first premium payment with instant official receipt.",
+        "Online access setup for policy tracking."
+      ],
+      hi: [
+        "घर बैठे कागजी कार्रवाई और पूरी मदद।",
+        "यदि जरूरत हो, तो मेडिकल टेस्ट करवाने में पूरा सहयोग।",
+        "सुरक्षित भुगतान और तुरंत आधिकारिक रसीद (Official Receipt)।",
+        "पॉलिसी को ऑनलाइन ट्रैक करने की सेटिंग में मदद।"
+      ]
+    }
+  },
+  s3: {
+    name: { en: "Premium Reminder", hi: "प्रीमियम रिमाइंडर" },
+    icon: "🔔",
+    what: {
+      en: "A dedicated alerts service that tracks your policy due dates and reminds you well in advance to pay your premium.",
+      hi: "एक विशेष सेवा जो आपकी सभी LIC पॉलिसियों के प्रीमियम भरने की तारीखों पर नजर रखती है और समय से पहले आपको याद दिलाती है।"
+    },
+    why: {
+      en: "If a premium is missed, the policy can lapse, which voids the death cover and halts bonus additions. Our reminders keep your family protected at all times.",
+      hi: "यदि प्रीमियम छूट जाए, तो पॉलिसी बंद (lapsed) हो सकती है, जिससे परिवार का रिस्क कवर खत्म हो जाता है। हमारी समय पर चेतावनी से आपकी सुरक्षा कभी नहीं थमेगी।"
+    },
+    benefits: {
+      en: [
+        "Timely alerts via WhatsApp, SMS, or Phone Call.",
+        "Assistance with direct online payment links.",
+        "Avoid late fee penalties and policy lapses.",
+        "Keep your life insurance coverage active continuously."
+      ],
+      hi: [
+        "व्हाट्सएप, एसएमएस या कॉल द्वारा समय पर रिमाइंडर।",
+        "ऑनलाइन सीधे भुगतान करने के लिए सुरक्षित लिंक उपलब्ध कराना।",
+        "लेट फीस (ब्याज) के नुकसान और पॉलिसी लैप्स होने से बचाव।",
+        "आपका इंश्योरेंस कवर बिना रुके लगातार चालू रहता है।"
+      ]
+    }
+  },
+  s4: {
+    name: { en: "Policy Revival", hi: "बंद पॉलिसी चालू करना" },
+    icon: "🔄",
+    what: {
+      en: "The legal and administrative process of restarting a lapsed LIC insurance policy that has stopped due to unpaid premiums.",
+      hi: "प्रीमियम न भरने के कारण बंद (lapsed) हो चुकी LIC पॉलिसी को दोबारा से चालू करने (Revival) की पूरी प्रक्रिया में सहायता।"
+    },
+    why: {
+      en: "Instead of losing your previous savings and life cover, reviving your old policy allows you to regain full protection and all accrued bonuses.",
+      hi: "पिछली जमा की गई रकम और सुरक्षा को गंवाने के बजाय, पुरानी बंद पॉलिसी को दोबारा चालू करने से आपको फिर से पूरा सुरक्षा कवच और पुराना बोनस वापस मिल जाता है।"
+    },
+    benefits: {
+      en: [
+        "Calculation of pending premiums and exact interest details.",
+        "Information and benefit application for LIC late fee concession campaigns.",
+        "Assistance in filling Health Declarations (Form 680).",
+        "Fast-track approval from LIC branch office."
+      ],
+      hi: [
+        "बकाया प्रीमियम और सटीक ब्याज दर की गणना।",
+        "LIC की विशेष छूट योजनाओं (Concession Campaigns) का पूरा लाभ दिलवाना।",
+        "जरूरी सेहत घोषणा पत्र (Form 680) भरने में मदद।",
+        "LIC ऑफिस से जल्द से जल्द पॉलिसी दोबारा चालू करवाना।"
+      ]
+    }
+  },
+  s5: {
+    name: { en: "Nominee Change / Update", hi: "नॉमिनी बदलना / अपडेट" },
+    icon: "👤",
+    what: {
+      en: "Updating or changing the nominee details in your insurance policy records to reflect your current life situation.",
+      hi: "अपनी बीमा पॉलिसी में नॉमिनी (नामांकित व्यक्ति) का नाम बदलने, नया नॉमिनी जोड़ने या विवरण अपडेट करने की कागजी कार्रवाई।"
+    },
+    why: {
+      en: "In case of marriage, birth of children, or the demise of the current nominee, updating the nominee is crucial. It ensures that the claim payout reaches the correct loved ones without legal disputes.",
+      hi: "शादी होने पर, बच्चे के जन्म पर या पुराने नॉमिनी की मृत्यु होने पर नॉमिनी बदलना बेहद जरूरी है। इससे भविष्य में क्लेम का पैसा सही व्यक्ति को बिना अदालती चक्करों के मिलता है।"
+    },
+    benefits: {
+      en: [
+        "Preparation of LIC Form 3750 and required declarations.",
+        "Verification of relationship proof documents.",
+        "Smooth submission and official endorsement from LIC.",
+        "Legal peace of mind for your family's future."
+      ],
+      hi: [
+        "LIC फॉर्म 3750 और जरूरी घोषणा पत्र तैयार करना।",
+        "रिश्ते के प्रमाण संबंधी दस्तावेजों का सत्यापन।",
+        "LIC ऑफिस में आसानी से जमा कराकर आधिकारिक रसीद पाना।",
+        "परिवार के भविष्य के लिए कानूनी रूप से सुरक्षित व्यवस्था।"
+      ]
+    }
+  },
+  s6: {
+    name: { en: "Loan Against Policy", hi: "पॉलिसी पर लोन" },
+    icon: "🏦",
+    what: {
+      en: "Guiding and helping policyholders avail of low-interest cash loans from LIC by pledging their active policies as collateral.",
+      hi: "आपकी चालू LIC पॉलिसी को गिरवी (Collateral) रखकर LIC से बेहद कम ब्याज दर पर कैश लोन दिलाने में पूरी सहायता।"
+    },
+    why: {
+      en: "It is the cheapest way to raise immediate funds for emergencies. Unlike bank loans, it requires no credit checks, has extremely low interest, and does not stop your policy benefits.",
+      hi: "यह किसी भी इमरजेंसी के लिए पैसे जुटाने का सबसे आसान और सस्ता तरीका है। इसमें क्रेडिट स्कोर की जरूरत नहीं होती और लोन के बावजूद आपकी पॉलिसी चलती रहती है।"
+    },
+    benefits: {
+      en: [
+        "Interest rates much lower than personal loans or credit cards.",
+        "No impact on policy cover or accumulated bonus.",
+        "Extremely simple paperwork with direct bank credit.",
+        "Flexible repayment options (pay interest only, principal later)."
+      ],
+      hi: [
+        "पर्सनल लोन या क्रेडिट कार्ड की तुलना में बेहद कम ब्याज दर।",
+        "बीमा कवर और जमा बोनस पर कोई आंच नहीं आती।",
+        "बेहद आसान कागजी कार्रवाई और पैसा सीधे आपके बैंक खाते में।",
+        "पुनर्भुगतान में लचीलापन (केवल ब्याज या पूरा पैसा अपनी सुविधानुसार चुकाएं)।"
+      ]
+    }
+  },
+  s7: {
+    name: { en: "Maturity Claim Support", hi: "मैच्योरिटी क्लेम सपोर्ट" },
+    icon: "💰",
+    what: {
+      en: "Assisting you in submitting the required papers to successfully receive your policy survival or maturity benefits upon completion of the term.",
+      hi: "पॉलिसी का समय पूरा होने पर (Maturity) पूरा पैसा बिना किसी भाग-दौड़ के सीधे आपके बैंक खाते में सुरक्षित ट्रांसफर कराने में मदद।"
+    },
+    why: {
+      en: "Maturity requires submitting discharge forms, policy bonds, and bank details. Professional support ensures your payout is processed quickly without delays or rejections.",
+      hi: "मैच्योरिटी क्लेम के लिए डिस्चार्ज फॉर्म और बैंक डॉक्युमेंट्स की जरूरत होती है। सही जानकारी के साथ काम करने से आपका पैसा बिना किसी देरी के समय पर मिलता है।"
+    },
+    benefits: {
+      en: [
+        "Preparation of Discharge Form 3825.",
+        "Verification of NEFT details and policy bond.",
+        "Liaison with LIC branch for fast processing.",
+        "Tracking payout status until credit in your bank account."
+      ],
+      hi: [
+        "डिस्चार्ज फॉर्म 3825 और अन्य आवश्यक कागजात तैयार करवाना।",
+        "NEFT बैंक डिटेल्स और मूल पॉलिसी बॉन्ड का सत्यापन।",
+        "LIC शाखा से संपर्क कर क्लेम को जल्द से जल्द पास करवाना।",
+        "खाते में पैसा आने तक पूरी ट्रैकिंग और सहायता।"
+      ]
+    }
+  },
+  s8: {
+    name: { en: "Death Claim Settlement", hi: "डेथ क्लेम सहायता" },
+    icon: "🙏",
+    what: {
+      en: "Priority and sensitive support to the nominee and family in claiming the insurance death benefits following the policyholder's demise.",
+      hi: "पॉलिसीधारक की मृत्यु की स्थिति में उनके परिवार और नॉमिनी को बीमा राशि (Death Claim) दिलाने में पूरी और संवेदनशील सहायता।"
+    },
+    why: {
+      en: "During a difficult time of loss, navigating through insurance paperwork can be overwhelming. We take care of all the procedures to ensure the family gets financial support swiftly.",
+      hi: "मुश्किल समय में परिवार को दफ्तरों के चक्कर काटने से बचाना और उन्हें मानसिक व वित्तीय संबल देने के लिए सही समय पर क्लेम पास करवाना सबसे जरूरी काम है।"
+    },
+    benefits: {
+      en: [
+        "Empathetic, priority guidance on claim forms.",
+        "Assistance in compiling death certificates, medical records, and ID proofs.",
+        "Solving queries raised by LIC officials during investigation.",
+        "Ensuring rapid settlement and direct deposit of funds."
+      ],
+      hi: [
+        "संवेदनशील और सर्वोच्च प्राथमिकता के साथ क्लेम फॉर्म तैयार करना।",
+        "मृत्यु प्रमाण पत्र, मेडिकल रिकॉर्ड और पहचान पत्र जैसे दस्तावेजों को व्यवस्थित करना।",
+        "LIC विभाग द्वारा उठाई जाने वाली किसी भी पूछताछ का तुरंत निवारण।",
+        "बिना किसी देरी के क्लेम का पूरा पैसा सीधे नॉमिनी के खाते में जमा करवाना।"
+      ]
+    }
+  },
+  s9: {
+    name: { en: "Financial Planning", hi: "फाइनेंशियल प्लानिंग / बचत" },
+    icon: "📈",
+    what: {
+      en: "Comprehensive analysis and goal setting for key life events like child's higher education, daughter's marriage, and retirement pension.",
+      hi: "आपके जीवन के मुख्य लक्ष्यों (जैसे बच्चे की पढ़ाई, बेटी की शादी, खुद का बुढ़ापा) के लिए आज से ही सही बचत की योजना बनाना।"
+    },
+    why: {
+      en: "Inflation can deplete regular savings. Goal-based systematic investment in trusted LIC plans guarantees you have a large tax-free fund ready exactly when you need it.",
+      hi: "बढ़ती महंगाई के कारण सामान्य बचत नाकाफी हो जाती है। सही LIC प्लान्स में निवेश करके आप सुनिश्चित करते हैं कि जरूरत के समय आपके पास पक्का बड़ा टैक्स-फ्री फंड हो।"
+    },
+    benefits: {
+      en: [
+        "Personalized long-term wealth creation plans.",
+        "Guaranteed pension setups for life after retirement.",
+        "Tax optimization under Section 80C and 10(10D).",
+        "Regular reviews to align investments with income growth."
+      ],
+      hi: [
+        "व्यक्तिगत और लंबे समय की बचत योजनाएं।",
+        "रिटायरमेंट के बाद जीवनभर के लिए फिक्स गारंटीड पेंशन की सेटिंग।",
+        "धारा 80C और 10(10D) के तहत शानदार टैक्स बचत।",
+        "आमदनी बढ़ने के साथ निवेश को अपग्रेड करने की नियमित सलाह।"
+      ]
+    }
+  }
+};
+
+// UI State
+let currentLang = localStorage.getItem('lang') || 'hi'; // Default to Hindi as per user request
+let activePlanId = null;
+let activeServiceId = null;
+
+// DOM loaded event
+window.addEventListener('DOMContentLoaded', () => {
+  setLanguage(currentLang);
+  
+  // Scrolled Navbar logic
+  window.addEventListener('scroll', () => {
+    document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50);
+  });
+  
+  // Mobile Hamburger menu toggle
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  hamburger.addEventListener('click', () => navLinks.classList.toggle('open'));
+  
+  // Smooth scroll logic
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+      navLinks.classList.remove('open');
+    });
+  });
+  
+  // Close modal when clicking outside card
+  window.addEventListener('click', (e) => {
+    const modal = document.getElementById('planModal');
+    if (e.target === modal) {
+      closeModal();
+    }
+  });
+});
+
+// Switch language function
+function setLanguage(lang) {
+  currentLang = lang;
+  localStorage.setItem('lang', lang);
+  document.documentElement.lang = lang;
+  
+  // Toggle button active visual states
+  if (lang === 'en') {
+    document.getElementById('btn-en').classList.add('active');
+    document.getElementById('btn-hi').classList.remove('active');
+  } else {
+    document.getElementById('btn-hi').classList.add('active');
+    document.getElementById('btn-en').classList.remove('active');
+  }
+  
+  // Translate elements with data-i18n
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (translations[lang] && translations[lang][key]) {
+      el.innerHTML = translations[lang][key];
+    }
+  });
+  
+  // Translate inputs with placeholders
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+    const key = el.getAttribute('data-i18n-placeholder');
+    if (translations[lang] && translations[lang][key]) {
+      el.setAttribute('placeholder', translations[lang][key]);
+    }
+  });
+  
+  // Translate plan items names on grid list
+  document.querySelectorAll('[data-plan-name]').forEach(el => {
+    const planId = el.getAttribute('data-plan-name');
+    if (planDetails[planId]) {
+      el.textContent = planDetails[planId].name[lang];
+    }
+  });
+  
+  // Translate Contact Form select options dynamically
+  const select = document.getElementById('fservice');
+  if (select) {
+    const options = select.options;
+    const servicesMap = [
+      { val: "", key: "form_select_service" },
+      { val: "LIC Policy Consultation", key: "s1_title" },
+      { val: "New Policy Issuance", key: "s2_title" },
+      { val: "Policy Revival", key: "s4_title" },
+      { val: "Claim Assistance", key: "s7_title" },
+      { val: "Financial Planning", key: "s9_title" }
+    ];
+    servicesMap.forEach((item, index) => {
+      if (options[index]) {
+        options[index].text = translations[lang][item.key];
+      }
+    });
+  }
+  
+  // Refresh modal if open
+  if (activePlanId || activeServiceId) {
+    renderModal();
+  }
+}
+
+// Show Tab logic
+function showTab(id) {
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+  event.target.classList.add('active');
+}
+
+// Modal management
+function showPlanDetails(planId) {
+  activePlanId = planId;
+  activeServiceId = null;
+  renderModal();
+}
+
+function showServiceDetails(serviceId) {
+  activeServiceId = serviceId;
+  activePlanId = null;
+  renderModal();
+}
+
+function renderModal() {
+  const modal = document.getElementById('planModal');
+  if (!modal) return;
+  const lang = currentLang;
+  
+  if (activePlanId && planDetails[activePlanId]) {
+    const plan = planDetails[activePlanId];
+    document.getElementById('modalBadge').textContent = `Plan ${activePlanId}`;
+    document.getElementById('modalTitle').textContent = plan.name[lang];
+    
+    // Display Eligibility
+    document.getElementById('modalEligibilitySection').style.display = 'block';
+    document.getElementById('modalEligibility').textContent = plan.eligibility[lang];
+    
+    // Content sections
+    document.getElementById('modalWhatTitle').innerHTML = translations[lang].modal_what;
+    document.getElementById('modalWhat').textContent = plan.what[lang];
+    
+    document.getElementById('modalWhyTitle').innerHTML = translations[lang].modal_why;
+    document.getElementById('modalWhy').textContent = plan.why[lang];
+    
+    document.getElementById('modalBenefitsTitle').innerHTML = translations[lang].modal_benefits;
+    const benefitsList = document.getElementById('modalBenefits');
+    benefitsList.innerHTML = '';
+    plan.benefits[lang].forEach(benefit => {
+      const li = document.createElement('li');
+      li.textContent = benefit;
+      benefitsList.appendChild(li);
+    });
+    
+    // Buttons WhatsApp prep
+    const waBtn = document.getElementById('modalWaBtn');
+    const waMsg = lang === 'en' 
+      ? `Hello Khetendraji, I want to know more about the plan: ${plan.name.en} (Code ${activePlanId}).` 
+      : `नमस्ते खेतेन्द्र जी, मुझे ${plan.name.hi} (प्लान कोड ${activePlanId}) के बारे में और जानकारी चाहिए।`;
+    waBtn.href = `https://wa.me/919928961856?text=${encodeURIComponent(waMsg)}`;
+    waBtn.innerHTML = translations[lang].modal_wa_btn;
+    
+    const callBtn = document.getElementById('modalCallBtn');
+    callBtn.innerHTML = translations[lang].modal_call_btn;
+    
+    modal.classList.add('active');
+  } else if (activeServiceId && serviceDetails[activeServiceId]) {
+    const service = serviceDetails[activeServiceId];
+    document.getElementById('modalBadge').textContent = service.icon;
+    document.getElementById('modalTitle').textContent = service.name[lang];
+    
+    // Hide Eligibility
+    document.getElementById('modalEligibilitySection').style.display = 'none';
+    
+    // Content sections
+    document.getElementById('modalWhatTitle').textContent = lang === 'en' ? 'What is this service?' : 'यह सेवा क्या है?';
+    document.getElementById('modalWhat').textContent = service.what[lang];
+    
+    document.getElementById('modalWhyTitle').textContent = lang === 'en' ? 'Why do you need it?' : 'आपको इसकी आवश्यकता क्यों है?';
+    document.getElementById('modalWhy').textContent = service.why[lang];
+    
+    document.getElementById('modalBenefitsTitle').textContent = lang === 'en' ? 'Benefits & Process' : 'फायदे और प्रक्रिया';
+    const benefitsList = document.getElementById('modalBenefits');
+    benefitsList.innerHTML = '';
+    service.benefits[lang].forEach(benefit => {
+      const li = document.createElement('li');
+      li.textContent = benefit;
+      benefitsList.appendChild(li);
+    });
+    
+    // Buttons WhatsApp prep
+    const waBtn = document.getElementById('modalWaBtn');
+    const waMsg = lang === 'en' 
+      ? `Hello Khetendraji, I want to inquire about your service: ${service.name.en}.` 
+      : `नमस्ते खेतेन्द्र जी, मुझे आपकी सेवा: ${service.name.hi} के बारे में जानकारी चाहिए।`;
+    waBtn.href = `https://wa.me/919928961856?text=${encodeURIComponent(waMsg)}`;
+    waBtn.innerHTML = lang === 'en' ? '💬 Inquire on WhatsApp' : '💬 व्हाट्सएप पर जानकारी लें';
+    
+    const callBtn = document.getElementById('modalCallBtn');
+    callBtn.innerHTML = translations[lang].modal_call_btn;
+    
+    modal.classList.add('active');
+  }
+}
+
+function closeModal() {
+  const modal = document.getElementById('planModal');
+  if (modal) {
+    modal.classList.remove('active');
+  }
+  activePlanId = null;
+  activeServiceId = null;
+}
+
+// Contact form submission
+function submitForm(e) {
+  e.preventDefault();
+  const n = document.getElementById('fname').value;
+  const p = document.getElementById('fphone').value;
+  const s = document.getElementById('fservice').value;
+  const m = document.getElementById('fmsg').value;
+  
+  let msg = "";
+  if (currentLang === 'en') {
+    msg = `Hello Khetendraji, I am ${n} (Phone: ${p}). Service: ${s}. Message: ${m}`;
+  } else {
+    msg = `नमस्ते खेतेन्द्र जी, मैं ${n} बोल रहा/रही हूँ (मोबाइल: ${p})। मुझे ${s} सेवा के बारे में पूछना है। मेरा संदेश: ${m}`;
+  }
+  window.open('https://wa.me/919928961856?text=' + encodeURIComponent(msg), '_blank');
+}
+</script>
+</body>
+</html>
